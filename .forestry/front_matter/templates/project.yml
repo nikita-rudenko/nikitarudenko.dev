@@ -1,6 +1,7 @@
 ---
 label: Project
 hide_body: false
+display_field: name
 fields:
 - name: name
   type: text
@@ -33,11 +34,4 @@ fields:
   type: file
   config:
     maxSize: 64
-  label: screenshot
-- name: links
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-  label: Links
+  label: Screenshot

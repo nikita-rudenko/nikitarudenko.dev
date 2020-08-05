@@ -1,4 +1,43 @@
 ---
 label: Project
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+- name: short_overview
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Short overview
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: tech_used
+  type: tag_list
+  default: []
+  label: Tech used
+- name: screenshot
+  type: file
+  config:
+    maxSize: 64
+  label: screenshot
+- name: links
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Links

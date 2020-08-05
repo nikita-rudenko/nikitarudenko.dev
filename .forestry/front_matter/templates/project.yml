@@ -43,3 +43,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- content/projects/freecodecamp_bot.md

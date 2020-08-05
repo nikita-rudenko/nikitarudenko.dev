@@ -5,9 +5,19 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: _docs
+  path: content/snippets
+  label: Snippets
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/projects
+  label: Projects
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/blog
   label: Blog
-  create: all
+  create: documents
   match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"

@@ -40,6 +40,6 @@ fields:
     required: false
   label: Gradient
 pages:
-- content/projects/freecodecamp_bot.md
+- content/projects/freecodecamp-bot.md
 - content/projects/linguaship.md
 - content/projects/natours.md

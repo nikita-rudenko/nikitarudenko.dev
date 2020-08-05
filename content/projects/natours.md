@@ -11,6 +11,7 @@ links:
   href: natours.com
   label: live
 gradient: ''
+title: Natours
 
 ---
 A statically generated blog example using Next.js, Markdown, and TypeScript

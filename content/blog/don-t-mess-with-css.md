@@ -1,10 +1,12 @@
 ---
-date_published: 2020-08-04T17:34:10Z
+date_published: '2020-08-04T17:34:10Z'
 tags:
 - css
 title: Don't Mess with CSS
 excerpt: An overview of the most important topics about CSS
 cover_image: "/uploads/grand-teton-sunset-t3-2880x1800.jpg"
+cover: "/uploads/grand-teton-sunset-t3-2880x1800.jpg"
+date: 2020-04-06T20:14:32Z
 
 ---
 Is there any web developer who has never used Cascading Style Sheets? Of course not, it’s one of the core technologies in the modern web. But here is a thing, despite its simplicity, CSS can be tedious to work with. Backend developers who once decided to fix something in styles on the frontend can’t be wrong 😛

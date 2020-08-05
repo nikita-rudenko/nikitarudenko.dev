@@ -16,14 +16,14 @@ fields:
     schema:
       format: markdown
   label: Excerpt
-- name: cover_image
+- name: cover
   type: file
   config:
     maxSize: 64
-  label: Cover image
-- name: date_published
+  label: Cover
+- name: date
   type: datetime
-  label: Date published
+  label: Date
   description: ''
   config:
     required: true

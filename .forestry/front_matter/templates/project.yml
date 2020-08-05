@@ -17,15 +17,6 @@ fields:
     schema:
       format: markdown
   label: Short overview
-- name: description
-  type: textarea
-  default: ''
-  config:
-    required: true
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Description
 - name: tech_used
   type: tag_list
   default: []
@@ -43,5 +34,10 @@ fields:
   config:
     min: 
     max: 
+- name: gradient
+  type: text
+  config:
+    required: false
+  label: Gradient
 pages:
 - content/projects/freecodecamp_bot.md

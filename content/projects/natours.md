@@ -12,6 +12,12 @@ links:
   label: live
 gradient: ''
 title: Natours
+excerpt: A statically generated blog example using Next.js, Markdown, and TypeScript
+technologies:
+- nodejs
+- mongodb
+- pug
+cover: "/uploads/natours.png"
 
 ---
 A statically generated blog example using Next.js, Markdown, and TypeScript

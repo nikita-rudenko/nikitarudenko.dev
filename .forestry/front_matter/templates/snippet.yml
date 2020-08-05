@@ -1,4 +1,13 @@
 ---
 label: Snippet
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags

@@ -3,11 +3,11 @@ label: Project
 hide_body: false
 display_field: name
 fields:
-- name: name
+- name: title
   type: text
   config:
     required: true
-  label: Name
+  label: Title
 - name: short_overview
   type: textarea
   default: ''

@@ -2,17 +2,17 @@
 label: Link
 hide_body: true
 fields:
-- name: label
-  type: text
-  config:
-    required: false
-  label: Label
-- name: link
+- name: href
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: false
     schema:
       format: markdown
-  label: Link
+  label: Href
+- name: label
+  type: text
+  config:
+    required: true
+  label: Label

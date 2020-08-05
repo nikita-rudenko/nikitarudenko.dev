@@ -8,7 +8,7 @@ fields:
   config:
     required: true
   label: Title
-- name: short_overview
+- name: excerpt
   type: textarea
   default: ''
   config:
@@ -16,7 +16,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Short overview
+  label: Excerpt
 - name: tech_used
   type: tag_list
   default: []

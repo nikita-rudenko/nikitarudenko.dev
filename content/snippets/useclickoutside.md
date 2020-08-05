@@ -3,6 +3,7 @@ tags:
 - hooks
 name: useClickOutside
 title: useClickOutside
+excerpt: Tracks clicks outside of an element
 
 ---
 ksamkldmals

@@ -36,28 +36,10 @@ fields:
     maxSize: 64
   label: Screenshot
 - name: links
-  type: list
+  type: blocks
+  label: Links
+  template_types:
+  - link
   config:
-    use_select: false
     min: 
     max: 
-  label: Links
-- name: ff
-  type: field_group
-  config: {}
-  fields:
-  - name: link
-    type: include
-    config: {}
-    template: link
-    label: link
-  - name: href
-    type: textarea
-    default: ''
-    config:
-      required: true
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: href
-  label: ff

@@ -51,4 +51,13 @@ fields:
     config: {}
     template: link
     label: link
+  - name: href
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: href
   label: ff

@@ -30,3 +30,5 @@ fields:
   type: tag_list
   default: []
   label: Tags
+pages:
+- content/blog/a-practical-guide-to-learning-front-end-development-for-beginners.md

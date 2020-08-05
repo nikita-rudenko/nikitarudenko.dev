@@ -36,9 +36,13 @@ fields:
     maxSize: 64
   label: Screenshot
 - name: links
-  type: field_group_list
+  type: list
   config:
+    use_select: false
     min: 
     max: 
-    labelField: 
   label: Links
+- name: ff
+  type: field_group
+  config: {}
+  label: ff

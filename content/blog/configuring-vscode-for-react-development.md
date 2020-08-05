@@ -1,5 +1,5 @@
 ---
-date_published: 2020-03-04T18:31:09Z
+date_published: '2020-03-04T18:31:09Z'
 tags:
 - tooling
 - vscode
@@ -7,6 +7,8 @@ tags:
 title: Configuring VSCode for React development
 excerpt: The best possibilities in VSCode that will simplify and enhance your productivity
 cover_image: "/uploads/vscode.jpeg"
+cover: "/uploads/vscode.jpeg"
+date: 2020-08-04T20:15:00Z
 
 ---
 VSCode has a lot of hidden features and a huge variety of extensions that can take your working experience to a new level. It’s hard to keep track of everything and guess what will fit into your React workflow.

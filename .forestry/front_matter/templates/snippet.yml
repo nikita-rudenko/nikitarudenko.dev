@@ -7,6 +7,15 @@ fields:
   config:
     required: true
   label: Title
+- name: excerpt
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Excerpt
 - name: tags
   type: tag_list
   default: []

@@ -45,4 +45,10 @@ fields:
 - name: ff
   type: field_group
   config: {}
+  fields:
+  - name: link
+    type: include
+    config: {}
+    template: link
+    label: link
   label: ff

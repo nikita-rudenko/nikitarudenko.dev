@@ -2,11 +2,11 @@
 label: Snippet
 hide_body: false
 fields:
-- name: name
+- name: title
   type: text
   config:
     required: true
-  label: Name
+  label: Title
 - name: tags
   type: tag_list
   default: []

@@ -17,15 +17,15 @@ fields:
     schema:
       format: markdown
   label: Excerpt
-- name: tech_used
+- name: technologies
   type: tag_list
   default: []
-  label: Tech used
-- name: screenshot
+  label: Technologies
+- name: cover
   type: file
   config:
     maxSize: 64
-  label: Screenshot
+  label: Cover
 - name: links
   type: blocks
   label: Links

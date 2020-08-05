@@ -2,6 +2,7 @@
 tags:
 - hooks
 name: useClickOutside
+title: useClickOutside
 
 ---
 ksamkldmals

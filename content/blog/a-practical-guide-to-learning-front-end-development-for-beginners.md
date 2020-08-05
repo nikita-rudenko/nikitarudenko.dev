@@ -1,5 +1,5 @@
 ---
-date_published: 2019-03-29T18:23:58Z
+date_published: '2019-03-29T18:23:58Z'
 tags:
 - motivation
 - newbie
@@ -7,6 +7,8 @@ title: A practical guide to learning front end development for beginners
 excerpt: This article is the guide I would have liked to have found when I started
   my journey.
 cover_image: "/uploads/a_practical_guide_to_learning_front_end.jpeg"
+cover: "/uploads/a_practical_guide_to_learning_front_end.jpeg"
+date: 2019-03-29T21:15:25Z
 
 ---
 I started my coding journey in spring 2018, a bit less than one year ago. I earned some programming skills since that time but still, I understand there are many more things to learn ahead. Anyway, I decided to gather these tips in a single place to help future developers on their path. This article is the guide I would have liked to have found when I started my journey.

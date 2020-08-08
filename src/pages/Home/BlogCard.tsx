@@ -11,7 +11,7 @@ const BlogCard = (props: Props) => {
   const { blogPosts } = props
 
   return (
-    <Card className="sm:col-span-2" title="Blog">
+    <Card href="/blog" className="sm:col-span-2" title="Blog">
       <ul className="mt-4">
         {blogPosts.map(({ href, title, date, id, excerpt }) => {
           return (

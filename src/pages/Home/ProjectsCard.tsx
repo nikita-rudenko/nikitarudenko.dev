@@ -9,7 +9,7 @@ type Props = {
 
 const ProjectsCard = ({ projects }: Props) => {
   return (
-    <Card title="Projects">
+    <Card href="/projects" title="Projects">
       <ul className="mt-4">
         {projects.map(({ title, excerpt, id }) => {
           return (

@@ -43,10 +43,11 @@ export function getPageSlugs(path: string) {
 export function getContentData(path: string, id: string) {
   const dir = `${CONTENT_DIR}/${path}`
 
-  const matterResult = parseWithMatter(dir, `${id}.md`)
+  const { data, content } = parseWithMatter(dir, `${id}.md`)
 
   return {
     id,
-    ...matterResult.data,
+    data,
+    content,
   }
 }

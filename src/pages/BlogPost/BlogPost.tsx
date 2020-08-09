@@ -13,16 +13,16 @@ const BlogPost = ({ blogPost: { content, title } }: any): JSX.Element => {
             backgroundImage:
               'linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%)',
           }}
-          className="px-8 py-24 text-mononchrome-700 font-display"
+          className="px-8 py-16 md:py-24 text-mononchrome-700 font-display"
         >
-          <div className="max-w-screen-lg m-auto text-4xl font-bold text-center md:text-5xl">
-            <h1 className="inline py-4 bg-white">
+          <div className="max-w-screen-lg m-auto text-3xl font-bold text-center md:text-4xl">
+            <h1 className="inline py-2 bg-white md:py-4">
               <span
                 style={{
                   boxDecorationBreak: 'clone',
                   WebkitBoxDecorationBreak: 'clone',
                 }}
-                className="inline p-4 bg-yellow-400 bg-opacity-75"
+                className="inline p-2 bg-yellow-400 bg-opacity-75 md:p-4"
               >
                 {title}
               </span>
@@ -31,7 +31,7 @@ const BlogPost = ({ blogPost: { content, title } }: any): JSX.Element => {
         </div>
 
         <section className="p-4 bg-white">
-          <article className="max-w-screen-md pt-12 mx-auto font-body text-mononchrome-700">
+          <article className="max-w-screen-md pt-2 mx-auto text-base md:pt-12 font-body text-mononchrome-700">
             <Markdown options={options}>{content}</Markdown>
           </article>
         </section>

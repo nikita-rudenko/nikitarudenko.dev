@@ -1,6 +1,7 @@
 import Markdown from 'markdown-to-jsx'
 
 import Layout from '@components/Layout'
+import options from '@components/MarkdownContent'
 
 const BlogPost = ({ blogPost: { content, title } }: any): JSX.Element => {
   return (
@@ -31,7 +32,7 @@ const BlogPost = ({ blogPost: { content, title } }: any): JSX.Element => {
 
         <section className="p-4 bg-white">
           <article className="max-w-screen-md pt-12 mx-auto font-body text-mononchrome-700">
-            <Markdown>{content}</Markdown>
+            <Markdown options={options}>{content}</Markdown>
           </article>
         </section>
       </Layout.Body>

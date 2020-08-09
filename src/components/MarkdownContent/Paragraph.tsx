@@ -1,7 +1,7 @@
 import { TRenderProps } from '@typings/commonPropTypes'
 
 const Paragraph = ({ children }: TRenderProps) => {
-  return <p className="mb-4 text-base">{children}</p>
+  return <p className="mb-4">{children}</p>
 }
 
 export default Paragraph

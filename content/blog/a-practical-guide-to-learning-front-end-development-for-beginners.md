@@ -21,11 +21,9 @@ Please note that these are just the first steps into the front-end universe. It 
 
 > _As a disclaimer, please note that the following resources are not an advertisement. I mention them because they helped me at some point and I personally recommend them. Most of them are free, otherwise, it will be specified._
 
-![Image for post](https://miro.medium.com/max/30/0*iRQaN3v6i5ggJS7L?q=20 =3600x2025)
+![Image for post](https://miro.medium.com/max/3600/0*iRQaN3v6i5ggJS7L)
 
-![Image for post](https://miro.medium.com/max/3600/0*iRQaN3v6i5ggJS7L =3600x2025)
-
-Photo by [Mikito Tateisi](https://unsplash.com/@tateisimikito?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
+Photo by [Mikito Tateisi](https://unsplash.com/@tateisimikito) on [Unsplash](https://unsplash.com/)
 
 As a starting point, I recommend signing up on [freeCodeCamp](https://www.freecodecamp.org/). And I will base the rest on their curriculum. I consider it to be a great resource for various reasons:
 
@@ -35,15 +33,13 @@ As a starting point, I recommend signing up on [freeCodeCamp](https://www.freeco
 4. **Community.** It’s more than just a learning platform. There is a forum, blog, and YouTube channel where developers of different levels share their knowledge and where you can find inspiration.
 5. **It’s free.** Money can be critical for many people and here, in any case, you won’t spend anything except time.
 
-> _Pro tip: you can create an account on_ [_Twitter_](https://twitter.com/)**_,_** _if you don’t have one yet, and publicly commit to the _[_100DaysOfCode _](https://www.100daysofcode.com/)_challenge. The reason is simple - there are many people doing this challenge. You will get motivation and support, and it will help you to keep up the pace. I highly recommend it, don’t be shy and enjoy the community 😉_
+> _Pro tip: you can create an account on_ [_Twitter_](https://twitter.com/)**_,_** _if you don’t have one yet, and publicly commit to the_ [100DaysOfCode](https://www.100daysofcode.com/) _challenge. The reason is simple - there are many people doing this challenge. You will get motivation and support, and it will help you to keep up the pace. I highly recommend it, don’t be shy and enjoy the community_ 😉
 
 ## Now we are all set to start! 🚀
 
-![Image for post](https://miro.medium.com/max/30/0*kJBjdPn2n9g74Tki?q=20 =3481x2321)
+![Image for post](https://miro.medium.com/max/3481/0*kJBjdPn2n9g74Tki)
 
-![Image for post](https://miro.medium.com/max/3481/0*kJBjdPn2n9g74Tki =3481x2321)
-
-Photo by [Braden Collum](https://unsplash.com/@bradencollum?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
+Photo by [Braden Collum](https://unsplash.com/@bradencollum) on [Unsplash](https://unsplash.com/)
 
 # Responsive Web Design
 
@@ -81,11 +77,9 @@ Before moving on to the final projects, I recommend you to do this:
 
 Go and build your final projects and share them 😉
 
-![Image for post](https://miro.medium.com/max/30/0*FVlnmo4vdmUTl7xe?q=20 =4000x3000)
+![Image for post](https://miro.medium.com/max/4000/0*FVlnmo4vdmUTl7xe)
 
-![Image for post](https://miro.medium.com/max/4000/0*FVlnmo4vdmUTl7xe =4000x3000)
-
-Photo by [Jake Ingle](https://unsplash.com/@ingle_jake?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
+Photo by [Jake Ingle](https://unsplash.com/@ingle_jake) on [Unsplash](https://unsplash.com/)
 
 # Javascript Algorithms And Data Structures
 
@@ -116,11 +110,9 @@ After you beat it I can say that…
 
 ## **…now you know how to work with JavaScript!** 🎉
 
-![Image for post](https://miro.medium.com/max/30/0*iMWb3Mbhemrald0k?q=20 =5534x3459)
+![Image for post](https://miro.medium.com/max/5534/0*iMWb3Mbhemrald0k)
 
-![Image for post](https://miro.medium.com/max/5534/0*iMWb3Mbhemrald0k =5534x3459)
-
-Photo by [Pankaj Patel](https://unsplash.com/@pankajpatel?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
+Photo by [Pankaj Patel](https://unsplash.com/@pankajpatel) on [Unsplash](https://unsplash.com/)
 
 # Sticking things together
 
@@ -158,11 +150,9 @@ I hope you are excited to use your new knowledge on the final projects.
 
 ## **Now you can build anything you want** 🎉
 
-![Image for post](https://miro.medium.com/max/30/0*svDRmbMBy6k8_vAJ?q=20 =4000x2666)
+![Image for post](https://miro.medium.com/max/4000/0*svDRmbMBy6k8_vAJ)
 
-![Image for post](https://miro.medium.com/max/4000/0*svDRmbMBy6k8_vAJ =4000x2666)
-
-Photo by [rawpixel](https://unsplash.com/@rawpixel?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
+Photo by [rawpixel](https://unsplash.com/@rawpixel) on [Unsplash](https://unsplash.com/)
 
 # Moving further
 

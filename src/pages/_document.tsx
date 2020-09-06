@@ -6,7 +6,7 @@ class Document extends NextDocument<{ css: string }> {
       <Html lang="en">
         <Head />
         <body>
-          <script src="/public/noflash.js" />
+          <script src="/noflash.js" />
           <Main />
           <NextScript />
         </body>

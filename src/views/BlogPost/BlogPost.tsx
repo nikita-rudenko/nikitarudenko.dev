@@ -1,12 +1,14 @@
 import clsx from 'clsx'
+import { useContext } from 'react'
 
 import Layout from '@components/Layout'
 import MarkdownContent from '@components/MarkdownContent'
 import Title from '@components/Title'
-import useCurrentMode from '@hooks/useCurrentMode'
+import { ThemeContext } from '@context/ThemeContext'
+import getThemeGradient from '@utils/getThemeGradient'
 
 const BlogPost = ({ blogPost: { content, title } }: any): JSX.Element => {
-  const mode = useCurrentMode()
+  const [theme] = useContext(ThemeContext)
 
   return (
     <Layout>
@@ -15,7 +17,7 @@ const BlogPost = ({ blogPost: { content, title } }: any): JSX.Element => {
         <div
           className={clsx(
             'px-8 py-16 md:py-24 text-monochrome-700 font-display',
-            mode && `gradient-${mode}`
+            getThemeGradient(theme)
           )}
         >
           <div className="max-w-screen-lg m-auto text-center">

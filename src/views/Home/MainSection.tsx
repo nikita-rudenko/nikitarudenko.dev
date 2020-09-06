@@ -1,20 +1,21 @@
 import clsx from 'clsx'
-import { ReactNode } from 'react'
+import { ReactNode, useContext } from 'react'
 
-import useCurrentMode from '@hooks/useCurrentMode'
+import { ThemeContext } from '@context/ThemeContext'
+import getThemeGradient from '@utils/getThemeGradient'
 
 type Props = {
   children: ReactNode
 }
 
 const MainSection = ({ children }: Props): JSX.Element => {
-  const mode = useCurrentMode()
+  const [theme] = useContext(ThemeContext)
 
   return (
     <section
       className={clsx(
         'px-4 py-8 md:py-16 bg-monochrome-400',
-        mode && `gradient-${mode}`
+        getThemeGradient(theme)
       )}
     >
       <div className="grid max-w-screen-md grid-cols-1 gap-3 mx-auto md:gap-5 sm:grid-cols-2">

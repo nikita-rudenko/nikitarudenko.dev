@@ -1,12 +1,14 @@
 import clsx from 'clsx'
+import { useContext } from 'react'
 
 import { GithubLink, OtherLink } from '@components/ExtLinks'
 import Layout from '@components/Layout'
 import MarkdownContent from '@components/MarkdownContent'
 import Tag from '@components/Tag'
 import Title from '@components/Title'
-import useCurrentMode from '@hooks/useCurrentMode'
+import { ThemeContext } from '@context/ThemeContext'
 import { TProject } from '@typings/contentTypes'
+import getThemeGradient from '@utils/getThemeGradient'
 
 type Props = {
   project: TProject & { content: string }
@@ -15,7 +17,7 @@ type Props = {
 const Project = ({
   project: { content, title, tags, links },
 }: Props): JSX.Element => {
-  const mode = useCurrentMode()
+  const [theme] = useContext(ThemeContext)
 
   return (
     <Layout>
@@ -24,7 +26,7 @@ const Project = ({
         <div
           className={clsx(
             'flex flex-col px-8 py-16 md:py-24 font-display',
-            mode && `gradient-${mode}`
+            getThemeGradient(theme)
           )}
         >
           <div className="max-w-screen-lg m-auto text-3xl font-bold text-center md:text-4xl">

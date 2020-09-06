@@ -1,23 +1,25 @@
 import clsx from 'clsx'
 import Link from 'next/link'
+import { useContext } from 'react'
 
 import Card from '@components/Card'
 import Layout from '@components/Layout'
 import Title from '@components/Title'
-import useCurrentMode from '@hooks/useCurrentMode'
+import { ThemeContext } from '@context/ThemeContext'
 import { TBlogPostPreview } from '@typings/contentTypes'
+import getThemeGradient from '@utils/getThemeGradient'
 
 type Props = {
   blogPosts: TBlogPostPreview[]
 }
 
 const Blog = ({ blogPosts }: Props): JSX.Element => {
-  const mode = useCurrentMode()
+  const [theme] = useContext(ThemeContext)
 
   return (
     <Layout>
       <Layout.Header />
-      <Layout.Body className={clsx('px-4', mode && `gradient-${mode}`)}>
+      <Layout.Body className={clsx('px-4', getThemeGradient(theme))}>
         <div className="px-2 py-24 text-center lg:px-6 text-monochrome-800">
           <Title>Blog</Title>
         </div>

@@ -1,16 +1,15 @@
 import { AppProps } from 'next/app'
-import useDarkMode from 'use-dark-mode'
 
+import { ThemeContextProvider } from '@context/ThemeContext'
 import '@styles/tailwind.css'
 import '@styles/fonts.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  useDarkMode(false, {
-    classNameDark: 'dark',
-    classNameLight: 'light',
-  })
-
-  return <Component {...pageProps} />
+  return (
+    <ThemeContextProvider>
+      <Component {...pageProps} />
+    </ThemeContextProvider>
+  )
 }
 
 export default App

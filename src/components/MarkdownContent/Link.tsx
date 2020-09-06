@@ -9,7 +9,7 @@ const Link = ({ children, ...props }: TSpreadProps) => {
     <a
       {...props}
       tabIndex={0}
-      className="font-bold text-indigo-800 cursor-pointer hover:underline"
+      className="font-bold text-indigo-800 cursor-pointer dark:text-indigo-400 hover:underline"
     >
       {children}
     </a>

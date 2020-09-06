@@ -6,10 +6,13 @@ import FooterLink from './FooterLink'
 
 const Footer = ({ className = '', ...props }: TSpreadProps) => (
   <footer
-    className={clsx('border-t-2 border-monochrome-100', className)}
+    className={clsx(
+      'border-t-2 border-monochrome-100 dark:border-monochrome-700',
+      className
+    )}
     {...props}
   >
-    <div className="flex flex-col justify-center max-w-screen-xl px-4 py-4 mx-auto bg-white sm:flex-row sm:items-center sm:justify-evenly md:py-8 md:px-16 font-body text-monochrome-800">
+    <div className="flex flex-col justify-center max-w-screen-xl px-4 py-4 mx-auto sm:flex-row sm:items-center sm:justify-evenly md:py-8 md:px-16 font-body">
       <div className="text-sm md:text-base">
         Made using{' '}
         <FooterLink className="hover:bg-black" href="https://nextjs.org/">

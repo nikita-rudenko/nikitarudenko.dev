@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { useState } from 'react'
 
+import DarkModeToggle from '@components/DarkModeToggle'
 import { INTERNAL_LINKS_LIST } from '@constants/links'
 
 import HeaderLink from './HeaderLink'
@@ -20,7 +21,7 @@ const NavMobile = () => {
       >
         <div
           className={clsx(
-            'flex justify-center items-center inset-0 opacity-0 bg-white h-full transition-opacity duration-500',
+            'flex justify-center items-center flex-col inset-0 opacity-0 bg-white dark:bg-monochrome-800 dark:text-white h-full transition-opacity duration-500',
             isOpen && 'opacity-100'
           )}
         >
@@ -36,10 +37,14 @@ const NavMobile = () => {
               )
             })}
           </div>
+
+          <div className="mt-8">
+            <DarkModeToggle />
+          </div>
         </div>
       </nav>
 
-      <div className="fixed bottom-0 right-0 z-40 block p-4 bg-white border-t-2 border-l-2 rounded-tl-lg shadow-md md:hidden border-mononchrome-700">
+      <div className="fixed bottom-0 right-0 z-40 block p-4 bg-white border-t-2 border-l-2 rounded-tl-lg shadow-md dark:bg-monochrome-700 dark:text-white md:hidden border-mononchrome-700">
         <NavMobileIcon isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </>

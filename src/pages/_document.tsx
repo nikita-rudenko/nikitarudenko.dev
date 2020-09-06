@@ -1,17 +1,16 @@
-import NextDocument, { Head, Main, NextScript } from 'next/document'
+import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
 
 class Document extends NextDocument<{ css: string }> {
   render() {
     return (
-      <html lang="en">
-        <Head>
-          <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
-        </Head>
+      <Html lang="en">
+        <Head />
         <body>
+          <script src="/public/noflash.js" />
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }

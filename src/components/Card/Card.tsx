@@ -17,7 +17,7 @@ const Card = (props: Props) => {
     <div
       className={clsx(
         className,
-        'bg-white rounded-md shadow-md text-monochrome-800 overflow-hidden'
+        'bg-white rounded-md shadow-md overflow-hidden dark:bg-monochrome-800'
       )}
     >
       {title && <CardTitle title={title} href={href} />}

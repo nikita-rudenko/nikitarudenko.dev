@@ -8,10 +8,10 @@ const NavMobileIcon = ({ isOpen, setIsOpen }: any) => {
       onClick={() => setIsOpen(!isOpen)}
       className={clsx(s.navIcon, isOpen && s.open)}
     >
-      <span className="bg-monochrome-900"></span>
-      <span className="bg-monochrome-900"></span>
-      <span className="bg-monochrome-900"></span>
-      <span className="bg-monochrome-900"></span>
+      <span className="bg-monochrome-900 dark:bg-white"></span>
+      <span className="bg-monochrome-900 dark:bg-white"></span>
+      <span className="bg-monochrome-900 dark:bg-white"></span>
+      <span className="bg-monochrome-900 dark:bg-white"></span>
     </div>
   )
 }

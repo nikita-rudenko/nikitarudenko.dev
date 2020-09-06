@@ -4,11 +4,11 @@ import { HeartIcon, ReactIcon, TriangleIcon } from '@components/SVG'
 
 const HeroSection = (): JSX.Element => {
   return (
-    <section className="px-2 py-32 lg:px-6 text-monochrome-800 font-display">
+    <section className="px-2 py-32 lg:px-6 font-display">
       <h1 className="text-4xl font-bold text-center md:text-5xl">
         <span>Hey! My name is </span>
         <Link href="/about">
-          <a className="inline-block px-4 transition duration-200 ease-in bg-yellow-400 bg-opacity-75 hover:bg-yellow-400">
+          <a className="inline-block px-4 transition duration-200 ease-in bg-yellow-400 text-monochrome-800 hover:bg-yellow-400">
             Nikita Rudenko
           </a>
         </Link>
@@ -27,7 +27,7 @@ const HeroSection = (): JSX.Element => {
         and{' '}
         <a
           href="https://nextjs.org/"
-          className="inline-flex items-center font-bold text-black"
+          className="inline-flex items-center px-1 font-bold text-black dark:bg-white"
         >
           Next.js <TriangleIcon className="w-3 h-3 ml-1 md:w-4 md:h-4" />
         </a>

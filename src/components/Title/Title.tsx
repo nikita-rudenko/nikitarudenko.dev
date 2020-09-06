@@ -1,7 +1,7 @@
 import { TRenderProps } from '@typings/commonPropTypes'
 
 const Title = ({ children }: TRenderProps) => (
-  <h1 className="inline py-2 text-4xl font-bold bg-white shadow-md font-display md:text-4xl md:py-4">
+  <h1 className="inline py-2 text-4xl font-bold bg-white shadow-md text-monochrome-800 font-display md:text-4xl md:py-4">
     <span
       style={{
         boxDecorationBreak: 'clone',

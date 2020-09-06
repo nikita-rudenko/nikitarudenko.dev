@@ -2,8 +2,17 @@
 @tailwind utilities;
 
 body {
-  background-color: #fff;
   min-height: 100vh;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+body.dark {
+  background-color: #333333;
+  color: #ffffff;
 }
 
 svg {
@@ -18,8 +27,18 @@ svg {
   );
 }
 
+.gradient-dark {
+  background: linear-gradient(315deg, #5e574d 0%, #7d6d61 74%);
+}
+
 .hover-bg-grayout:hover,
 .hover-bg-grayout:active,
 .hover-bg-grayout:focus {
-  @apply bg-gray-200 transform transition duration-200
+  @apply transition duration-200 transform bg-gray-200;
+}
+
+.dark .hover-bg-grayout:hover,
+.dark .hover-bg-grayout:active,
+.dark .hover-bg-grayout:focus {
+  @apply bg-monochrome-700;
 }

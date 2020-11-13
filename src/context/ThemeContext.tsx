@@ -16,11 +16,7 @@ function ThemeContextProvider({ children }: TRenderProps) {
   })
 
   useEffect(() => {
-    if (process.browser) {
-      setCurrentTheme(isDarkMode ? 'dark' : 'light')
-    } else {
-      setCurrentTheme('')
-    }
+    setCurrentTheme(isDarkMode ? 'dark' : 'light')
   }, [isDarkMode])
 
   return (

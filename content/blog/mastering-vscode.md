@@ -63,7 +63,7 @@ I am sure you already know the basic shortcuts for editing, and I want to focus 
 
 **View: Show Search** - jump to the global search across all files in your workspace.
 
-Additionally, there are [editing hacks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_editing-hacks) in the VSCode docs that worth learning.
+Additionally, there are [editing hacks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_editing-hacks) in the VSCode docs that are worth learning.
 
 ![Laptop.](https://res.cloudinary.com/nikita-rudenko/image/upload/v1605476102/nikita-rudenko.dev/laptop.jpg "Photo by Blake Connally on Unsplash")
 

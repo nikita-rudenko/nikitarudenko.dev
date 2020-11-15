@@ -107,7 +107,7 @@ Sharing my list of the most useful and carefully selected extensions I use in my
 
 [**ESLint**](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - essential static analysis tool that prevents huge amount of potential bugs. I can't imagine my life without ESLint.
 
-[**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - essential code formatter that helps keep codebase clean. Can be used in combination with ESLint so formatting errors are shown as lint errors ([guide](https://medium.com/@yaroslavberkut/prettier-eslint-for-react-how-to-kiss-f309789681a6)).
+[**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - essential code formatter that helps to keep codebase clean. It can be used in combination with ESLint so formatting errors are shown as lint errors ([guide](https://medium.com/@yaroslavberkut/prettier-eslint-for-react-how-to-kiss-f309789681a6)).
 
 [**Quokka**](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) - a Javascript runner used for creating and debugging algorithms.
 

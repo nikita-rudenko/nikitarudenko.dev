@@ -63,7 +63,9 @@ I am sure you already know the basic shortcuts for editing, and I want to focus 
 
 **View: Show Search** - jump to the global search across all files in your workspace.
 
-Additionally, there are \[editing hacks\]([https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_editing-hacks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_editing-hacks "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_editing-hacks")) in the VSCode docs that worth learning.
+Additionally, there are [editing hacks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_editing-hacks) in the VSCode docs that worth learning.
+
+![Laptop.](https://res.cloudinary.com/nikita-rudenko/image/upload/v1605476102/nikita-rudenko.dev/laptop.jpg "Photo by Blake Connally on Unsplash")
 
 ## Extensions
 
@@ -71,13 +73,13 @@ VSCode utilizes the addon-first approach. Even the basic features are based on e
 
 Sharing my list of the most useful and carefully selected extensions I use in my daily workflow:
 
-[**IntelliCode**](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode "IntelliCode") - gives AI boost to Intellisense and tries to make suggestions more useful.
+[**IntelliCode**](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - gives AI boost to Intellisense and tries to make suggestions more useful.
 
-[**GitLens**]() - an essential Swiss army knife for work with Git.
+[**GitLens**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - an essential Swiss army knife for work with Git.
 
 [**GitGraph**](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph "GitGraph") - adds a visual representation of the history of your Git repo.
 
-[**Git Stash**]() - used as an addition for GitLens to work with git stash, adds a stash explorer to the Source Control tab, and ability to see diffs.
+[**Git Stash**](https://marketplace.visualstudio.com/items?itemName=arturock.gitstash) - used as an addition for GitLens to work with git stash, adds a stash explorer to the Source Control tab, and ability to see diffs.
 
 [**Conventional Commits**](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits) - awesome extension that allows writing [conventional commit messages](https://www.conventionalcommits.org/en/v1.0.0/) with ease and gitmojis.
 
@@ -85,7 +87,7 @@ Sharing my list of the most useful and carefully selected extensions I use in my
 
 [**Project Manager**](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) - I find to work with VSCode workspaces confusing. This extension makes it easy to switch between projects.
 
-[**EditorConfig**]() - support cross-editor formatting rules.
+[**EditorConfig**](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - support cross-editor formatting rules.
 
 [**Live Server**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - serve plain HTML website on localhost.
 
@@ -93,32 +95,32 @@ Sharing my list of the most useful and carefully selected extensions I use in my
 
 [**Resource Monitor**](https://marketplace.visualstudio.com/items?itemName=mutantdino.resourcemonitor) - a small dashboard with live stats of your machine.
 
-[**Grammarly (unofficial)**]() - a popular grammar checker useful for Markdown.
+[**Grammarly (unofficial)**](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) - a popular grammar checker useful for Markdown.
 
 [**Test Explorer UI** ](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)- adds a tree of tests and can be extended with complementary extensions for various testing tools.
 
-**Favorite themes:** [**OneDark Pro**](), [**GitHub theme**](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), [**Secunda**](), [Kaia Theme](https://marketplace.visualstudio.com/items?itemName=ryan0x200.kaia-theme-vscode).
+**Favorite themes:** [**OneDark Pro**](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme), [**GitHub theme**](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), [**Secunda**](https://marketplace.visualstudio.com/items?itemName=ruj.secunda), [Kaia Theme](https://marketplace.visualstudio.com/items?itemName=ryan0x200.kaia-theme-vscode).
 
-**Favorite icon themes:** [**Material Icon theme**](), [**Awoo**](https://marketplace.visualstudio.com/items?itemName=metalcanine.awoo)**.**
+**Favorite icon themes:** [**Material Icon theme**](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme), [**Awoo**](https://marketplace.visualstudio.com/items?itemName=metalcanine.awoo)**.**
 
 #### Front-end extensions:
 
-[**ESLint**]() - essential static analysis tool that prevents huge amount of potential bugs. I can't imagine my life without ESLint.
+[**ESLint**](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - essential static analysis tool that prevents huge amount of potential bugs. I can't imagine my life without ESLint.
 
-[**Prettier**]() - essential code formatter that helps keep codebase clean. Can be used in combination with ESLint so formatting errors are shown as lint errors ([example]()).
+[**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - essential code formatter that helps keep codebase clean. Can be used in combination with ESLint so formatting errors are shown as lint errors ([guide](https://medium.com/@yaroslavberkut/prettier-eslint-for-react-how-to-kiss-f309789681a6)).
 
 [**Quokka**](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) - a Javascript runner used for creating and debugging algorithms
 
-[**Debugger for Chrome**]()  - run debugger right inside VSCode
+[**Debugger for Chrome**](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)  - run debugger right inside VSCode
 
-[**Document This**]() - a helper for writing JSDoc notations
+[**Document This**](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis) - a helper for writing JSDoc notations
 
-[**Jest Runner**]() - easily run and debug tests
+[**Jest Runner**](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) - easily run and debug Jest tests
 
 ## More tips
 
 1. Use Emmet shortcuts everywhere ([guide](https://code.visualstudio.com/docs/editor/emmet))
 2. Learn how to work Git in VSCode UI ([guide](https://code.visualstudio.com/docs/editor/versioncontrol))
 3. Use Docker and Remote extension pack for remote development ([guide](https://code.visualstudio.com/docs/remote/containers))
-4. Edit Markdown with ease in VSCode ([guide]())
-5. Learn more tricks at [vscodecandothat.com]()
+4. Edit Markdown with ease in VSCode ([guide](https://code.visualstudio.com/docs/languages/markdown))
+5. Learn more tricks at [vscodecandothat.com](https://www.vscodecandothat.com/)

@@ -7,7 +7,7 @@ import codeTheme from './codeTheme'
 const CodeBlock = ({ children, className }: TRenderProps) => {
   return (
     <SyntaxHighlighter
-      language={className && className.replace(/lang-/, '')}
+      language={className?.replace(/lang-/, '') || 'text'}
       style={codeTheme}
       showLineNumbers
       lineNumberStyle={{ color: '#495162', paddingRight: '16px' }}

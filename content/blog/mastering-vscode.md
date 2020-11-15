@@ -101,7 +101,7 @@ Sharing my list of the most useful and carefully selected extensions I use in my
 
 **Favorite themes:** [**OneDark Pro**](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme), [**GitHub theme**](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), [**Secunda**](https://marketplace.visualstudio.com/items?itemName=ruj.secunda), [Kaia Theme](https://marketplace.visualstudio.com/items?itemName=ryan0x200.kaia-theme-vscode).
 
-**Favorite icon themes:** [**Material Icon theme**](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme), [**Awoo**](https://marketplace.visualstudio.com/items?itemName=metalcanine.awoo)**.**
+**Favorite icon themes:** [**Material Icon theme**](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme), [**Awoo**](https://marketplace.visualstudio.com/items?itemName=metalcanine.awoo).
 
 #### Front-end extensions:
 

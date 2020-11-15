@@ -11,7 +11,7 @@ VSCode is the ultimate multi-purpose code editor that can fit in any workflow. I
 
 ## Shortcuts
 
-I am sure you already know the basic shortcuts for editing, and I want to focus on the most interesting and useful ones. I will use **shortcut names** since the actual keybindings are different depending on your OS. You can open Keyboard Shortcuts in your VSCode instance by clicking the cogwheel in the Activity Bar and look up the combination.
+I am sure you already know the basic shortcuts for editing, and I want to focus on the most interesting and useful ones. I will use **shortcut names** since the actual keybindings are different depending on your OS. You can open Keyboard Shortcuts in your VSCode instance by clicking on the cogwheel in the Activity Bar to look up the combination.
 
 ### Essentials
 

@@ -2,14 +2,15 @@
 tags:
 - styles
 title: Tailwind 2.0 Palette
-excerpt: Consistent colors for your CSS-in-JS needs
+excerpt: Colors for your CSS-in-JS needs
 
 ---
 If you are building something and can't afford investing time into creating wireframes, I totally understand you. I like to include a palette to my theme config, so I can play with colors while building. This is a nice palette from Tailwind 2.0 extracted for your CSS-in-JS needs.
 
 A few more resources for color experiments:
-- https://tailwind.ink/
-- http://sitehero.nl/uicolors/
+
+* https://tailwind.ink/
+* http://sitehero.nl/uicolors/
 
 > All credits to [Steve Schoger](https://twitter.com/steveschoger), [Adam Wathan](https://twitter.com/adamwathan), and all TailwindCSS contributors.
 

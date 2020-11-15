@@ -26,7 +26,7 @@ const Heading = ({ children, variant }: Props) => {
   return createElement(
     variant,
     {
-      className: `${fontSizeMap[variant]} mt-8 mb-0 font-bold`,
+      className: `${fontSizeMap[variant]} mt-8 mb-2 font-bold`,
     },
     children
   )

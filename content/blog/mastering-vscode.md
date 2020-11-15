@@ -109,13 +109,13 @@ Sharing my list of the most useful and carefully selected extensions I use in my
 
 [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - essential code formatter that helps keep codebase clean. Can be used in combination with ESLint so formatting errors are shown as lint errors ([guide](https://medium.com/@yaroslavberkut/prettier-eslint-for-react-how-to-kiss-f309789681a6)).
 
-[**Quokka**](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) - a Javascript runner used for creating and debugging algorithms
+[**Quokka**](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) - a Javascript runner used for creating and debugging algorithms.
 
-[**Debugger for Chrome**](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)  - run debugger right inside VSCode
+[**Debugger for Chrome**](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)  - run debugger right inside VSCode.
 
-[**Document This**](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis) - a helper for writing JSDoc notations
+[**Document This**](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis) - a helper for writing JSDoc notations.
 
-[**Jest Runner**](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) - easily run and debug Jest tests
+[**Jest Runner**](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) - easily run and debug Jest tests.
 
 ## More tips
 

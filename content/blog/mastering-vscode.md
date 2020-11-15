@@ -54,7 +54,7 @@ I am sure you already know the basic shortcuts for editing, and I want to focus 
 
 **Go back** - return to the last editing location or tab.
 
-**Go forward** - undo for **Go back.**
+**Go forward** - undo for **Go back**.
 
 **Go to Last Edit Location** - return to the place of your last edit after traveling through imports.
 

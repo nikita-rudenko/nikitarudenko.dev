@@ -27,7 +27,7 @@ I am sure you already know the basic shortcuts for editing, and I want to focus 
 
 **Go to Bracket** - underrated shortcut for Javascript that helps to untangle parenthesis and brackets by jumping between matching brackets.
 
-**Quick Fix... -** triggers suggestions for refactoring and fixes if the lightbulb is shown next to the gutter
+**Quick Fix...** - triggers suggestions for refactoring and fixing issues, if the lightbulb is shown next to the gutter.
 
 **Format Document** - makes messy code look better.
 

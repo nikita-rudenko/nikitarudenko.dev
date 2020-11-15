@@ -75,7 +75,7 @@ Sharing my list of the most useful and carefully selected extensions I use in my
 
 [**IntelliCode**](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - gives AI boost to Intellisense and tries to make suggestions more useful.
 
-[**GitLens**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - an essential Swiss army knife for work with Git.
+[**GitLens**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - an essential Swiss army knife for working with Git.
 
 [**GitGraph**](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph "GitGraph") - adds a visual representation of the history of your Git repo.
 

@@ -32,7 +32,7 @@ I am sure you already know the basic shortcuts for editing, and I want to focus 
 
 **Format Document** - makes messy code look better.
 
-### **Refactor Inspect**
+### **Refactor/inspect**
 
 **Go to Definition** - peek definition and its references.
 
@@ -50,7 +50,7 @@ I am sure you already know the basic shortcuts for editing, and I want to focus 
 
 **Reopen closed tab** - helps you overcome frustration after closing a tab you didn't want to.
 
-### **History-based Navigation**
+### **History-based navigation**
 
 **Go back** - return to the last editing location or tab.
 

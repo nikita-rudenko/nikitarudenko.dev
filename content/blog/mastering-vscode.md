@@ -47,7 +47,7 @@ I am sure you already know the basic shortcuts for editing, and I want to focus 
 
 **Switch tabs** - opens a list of currently opened tabs which is great for iterating between files you are working on.
 
-**Reopen closed tab** - prevents your frustration after closing a tab you didn't want to.
+**Reopen closed tab** - helps you overcome frustration after closing a tab you didn't want to.
 
 ### **History-based Navigation**
 

@@ -7,6 +7,7 @@ title: Mastering VSCode
 excerpt: Sharing my experience with the best code editor
 
 ---
+
 VSCode is the ultimate multi-purpose code editor that can fit in any workflow. It has a lot of hidden features and a huge variety of extensions that can take your work experience to a new level. It’s hard to find and keep track of everything, so in this post I will share my experience. Even though this guide is a bit JavaScript/TypeScript-centric, I believe everyone can pick up something new.
 
 ## Shortcuts
@@ -124,3 +125,5 @@ Sharing my list of the most useful and carefully selected extensions I use in my
 3. Use Docker and Remote extension pack for remote development ([guide](https://code.visualstudio.com/docs/remote/containers))
 4. Edit Markdown with ease in VSCode ([guide](https://code.visualstudio.com/docs/languages/markdown))
 5. Learn more tricks at [vscodecandothat.com](https://www.vscodecandothat.com/)
+
+> Special thanks to Ana Gilda Rodrigues for proofreading and trying out VSCode

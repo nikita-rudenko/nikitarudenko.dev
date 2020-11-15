@@ -23,7 +23,7 @@ I am sure you already know the basic shortcuts for editing, and I want to focus 
 
 **Trigger Suggest** - invokes Intellisense. I love using it to discover possible props and destructible values from objects.
 
-**Copy line up/down** - not just line as the name states! Also works for copying selections.
+**Copy line up/down** - not only does it work for copying lines as the name states, it also works for copying selections!
 
 **Go to Bracket** - underrated shortcut for Javascript that helps to untangle parenthesis and brackets by jumping between matching brackets.
 

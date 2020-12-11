@@ -1,6 +1,6 @@
-import clsx from 'clsx'
 import { ReactNode } from 'react'
 
+import * as Styled from './Card.styled'
 import CardTitle from './CardTitle'
 
 type Props = {
@@ -10,19 +10,12 @@ type Props = {
   className?: string
 }
 
-const Card = (props: Props) => {
-  const { children, title, className, href } = props
-
+const Card = ({ children, title, href, className }: Props) => {
   return (
-    <div
-      className={clsx(
-        className,
-        'bg-white rounded-md shadow-md overflow-hidden dark:bg-monochrome-800'
-      )}
-    >
+    <Styled.Card className={className}>
       {title && <CardTitle title={title} href={href} />}
       {children}
-    </div>
+    </Styled.Card>
   )
 }
 

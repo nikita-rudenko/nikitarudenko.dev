@@ -3,7 +3,7 @@ type Props = {
 }
 
 const EmojiSVG = ({ src }: Props) => {
-  return <span dangerouslySetInnerHTML={{ __html: src }}></span>
+  return <div dangerouslySetInnerHTML={{ __html: src }}></div>
 }
 
 export default EmojiSVG

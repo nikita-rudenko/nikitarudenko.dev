@@ -1,17 +1,17 @@
-import clsx from 'clsx'
+import styled, { css } from 'styled-components'
 
-import { TRenderProps } from '@typings/commonPropTypes'
+type Props = {
+  backgroundType?: 'primary' | 'gradient'
+}
 
-const Body = ({ children, className, ...props }: TRenderProps) => (
-  <main
-    style={{
-      minHeight: `calc(100vh - 5rem)`,
-    }}
-    className={clsx('h-full', className)}
-    {...props}
-  >
-    {children}
-  </main>
+const Body = styled.main<Props>(
+  ({ backgroundType, theme: { colors, gradients } }) => css`
+    flex: 1;
+
+    background: ${backgroundType === 'gradient'
+      ? gradients.orangePeach
+      : colors.bgPrimary};
+  `
 )
 
 export default Body

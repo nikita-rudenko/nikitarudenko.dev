@@ -20,7 +20,12 @@ const AboutPage = ({ data }: Props) => {
           content={seo.about.content}
         />
       </Head>
-      <About data={data} />
+      <About
+        avatar={data.avatar}
+        bio={data.bio}
+        learning={data.learning}
+        stack={data.stack}
+      />
     </>
   )
 }

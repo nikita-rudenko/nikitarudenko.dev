@@ -1,0 +1,23 @@
+{
+  "Bulk styled-components import": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "isc",
+    "body": [
+      "import * as Styled from '$1'",
+      "$2"
+    ],
+    "description": "Bulk styled-components import"
+  },
+  "Basic styled-component": {
+    "scope": "javascript,typescript",
+    "prefix": "sc",
+    "body": [
+      "export const $1 = styled.$2(",
+      "({$3}) => css`",
+      "  $4",
+      "`",
+      ")",
+    ],
+    "description": "Basic styled-component boilerplate"
+  },
+}

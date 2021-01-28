@@ -1,5 +1,4 @@
 import Layout from '@components/Layout'
-import SocialBlock from '@components/SocialBlock'
 import {
   TBlogPostPreview,
   TPRojectPreview,
@@ -8,10 +7,11 @@ import {
 
 import BlogCard from './BlogCard'
 import HeroSection from './HeroSection'
-import HomeNavigation from './HomeNavigation'
 import LabsCard from './LabsCard'
 import MainSection from './MainSection'
 import NotepadCard from './NotepadCard'
+import SiteNavigation from './SiteNavigation'
+import SocialNavigation from './SocialNavigation'
 
 type Props = {
   blogPosts: TBlogPostPreview[]
@@ -24,11 +24,11 @@ const Home = ({ blogPosts, projects, snippets }: Props): JSX.Element => (
     <Layout.Body>
       <HeroSection />
       <MainSection>
-        <HomeNavigation />
+        <SiteNavigation />
         <BlogCard blogPosts={blogPosts} />
         <LabsCard projects={projects} />
         <NotepadCard snippets={snippets} />
-        <SocialBlock />
+        <SocialNavigation />
       </MainSection>
     </Layout.Body>
     <Layout.Footer />

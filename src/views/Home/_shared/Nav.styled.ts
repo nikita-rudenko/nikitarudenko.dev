@@ -1,10 +1,8 @@
 import styled, { css } from 'styled-components'
 
-import CardComponent from '@components/ContentCard'
-
-export const NavigationContainer = styled.nav(
+export const NavContainer = styled.nav(
   ({ theme: { breakpoints } }) => css`
-    grid-column: span 1 / span 1;
+    grid-column: 1 / 2;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -14,19 +12,9 @@ export const NavigationContainer = styled.nav(
     @media (min-width: ${breakpoints.sm}) {
       grid-column: span 2 / span 2;
     }
+
     @media (min-width: ${breakpoints.md}) {
       gap: 1.25rem;
-    }
-  `
-)
-
-export const Card = styled(CardComponent)(
-  ({ theme: { breakpoints, font } }) => css`
-    font-size: ${font.size.sm};
-    font-weight: ${font.weight.bold};
-
-    @media (min-width: ${breakpoints.md}) {
-      font-size: ${font.size.xl};
     }
   `
 )
@@ -51,7 +39,7 @@ export const NavLink = styled.a(
   `
 )
 
-export const EmojiWrapper = styled.span(
+export const NavIconWrapper = styled.span(
   ({ theme: { breakpoints } }) => css`
     display: flex;
     justify-content: center;

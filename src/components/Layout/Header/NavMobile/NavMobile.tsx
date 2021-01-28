@@ -14,11 +14,11 @@ const NavMobile = () => {
       <Styled.Overlay isOpen={isOpen}>
         <Styled.Navigation isOpen={isOpen}>
           <Styled.NavigationList>
-            {INTERNAL_LINKS_LIST.map(({ href, label, emoji }) => {
+            {INTERNAL_LINKS_LIST.map(({ href, label, icon }) => {
               return (
                 <HeaderLink
                   key={label}
-                  emoji={emoji}
+                  emoji={icon}
                   href={href}
                   label={label}
                 />

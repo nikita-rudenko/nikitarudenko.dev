@@ -15,7 +15,7 @@ export const ContentGrid = styled.div(
   ({ theme: { breakpoints } }) => css`
     display: grid;
     max-width: ${breakpoints.md};
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 0.75rem;
     margin: 0 auto;
 

@@ -1,11 +1,17 @@
 import styled, { css } from 'styled-components'
 
-export const ContentCard = styled.div(
-  ({ theme: { colors, boxShadow } }) => css`
+export const Wrapper = styled.div(
+  ({ theme: { breakpoints, borderRadius, boxShadow, colors } }) => css`
     background-color: ${colors.bgPrimary};
-    border-radius: 0.375rem;
-    overflow: hidden;
+    border-radius: ${borderRadius.md};
     box-shadow: ${boxShadow.md};
+    overflow: hidden;
+    padding: 1rem;
+    /* grid-column: span 1 / span 2; */
+
+    @media (min-width: ${breakpoints.md}) {
+      padding: 1.5rem;
+    }
   `
 )
 

@@ -12,7 +12,7 @@ type Props = {
 
 const ContentCard = ({ children, title, href, className }: Props) => {
   return (
-    <Styled.ContentCard className={className}>
+    <Styled.Wrapper className={className}>
       <Styled.Title as="h3">
         {href ? (
           <Link href={href} passHref>
@@ -23,7 +23,7 @@ const ContentCard = ({ children, title, href, className }: Props) => {
         )}
       </Styled.Title>
       {children}
-    </Styled.ContentCard>
+    </Styled.Wrapper>
   )
 }
 

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import ContentCard from '@components/ContentCard'
 import EmojiSVG from '@components/EmojiSVG'
 import { TPRojectPreview } from '@typings/contentTypes'
 
@@ -11,7 +12,7 @@ type Props = {
 
 const LabsCard = ({ projects }: Props) => {
   return (
-    <Styled.Card href="/labs" title="Labs">
+    <ContentCard href="/labs" title="Labs">
       {projects.map(({ title, excerpt, href, id, emoji }) => {
         return (
           <Link key={id} href={href} passHref>
@@ -27,7 +28,7 @@ const LabsCard = ({ projects }: Props) => {
           </Link>
         )
       })}
-    </Styled.Card>
+    </ContentCard>
   )
 }
 

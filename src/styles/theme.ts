@@ -341,6 +341,10 @@ const gradients = {
   )`,
 }
 
+const borderRadius = {
+  md: '0.37rem',
+}
+
 const colors = {
   bgPrimary: palette.base.white,
   primary: '#ffe5b8',
@@ -352,6 +356,7 @@ const colors = {
 }
 
 export default {
+  borderRadius,
   boxShadow,
   breakpoints,
   colors,

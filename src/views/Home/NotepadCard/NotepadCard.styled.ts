@@ -1,17 +1,5 @@
 import styled, { css } from 'styled-components'
 
-import BaseCard from '@components/ContentCard'
-
-export const Card = styled(BaseCard)(
-  ({ theme: { breakpoints } }) => css`
-    padding: 1rem;
-
-    @media (min-width: ${breakpoints.md}) {
-      padding: 1.5rem;
-    }
-  `
-)
-
 export const ProjectLink = styled.a(
   ({ theme: { colors, font } }) => css`
     display: flex;

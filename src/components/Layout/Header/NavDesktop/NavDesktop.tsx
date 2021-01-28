@@ -6,10 +6,8 @@ import * as Styled from './NavDesktop.styled'
 const NavDesktop = () => {
   return (
     <Styled.Nav>
-      {INTERNAL_LINKS_LIST.map(({ href, label, emoji }) => {
-        return (
-          <HeaderLink key={label} label={label} href={href} emoji={emoji} />
-        )
+      {INTERNAL_LINKS_LIST.map(({ href, label, icon }) => {
+        return <HeaderLink key={label} label={label} href={href} emoji={icon} />
       })}
     </Styled.Nav>
   )

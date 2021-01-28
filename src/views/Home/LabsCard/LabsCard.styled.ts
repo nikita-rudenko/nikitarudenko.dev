@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import BaseCard from '@components/Card'
+import BaseCard from '@components/ContentCard'
 
 export const Card = styled(BaseCard)(
   ({ theme: { breakpoints } }) => css`
@@ -18,7 +18,6 @@ export const ProjectLink = styled.a(
     margin-top: 1rem;
     grid-template-columns: 1.2rem 1fr;
     column-gap: 0.5rem;
-    align-content: center;
     grid-template-areas:
       'icon title'
       'excerpt excerpt';
@@ -40,6 +39,9 @@ export const Icon = styled.div(
   ({ theme: { font } }) => css`
     grid-area: icon;
     font-size: ${font.size.xl};
+    display: flex;
+    justify-content: center;
+    align-items: center;
   `
 )
 

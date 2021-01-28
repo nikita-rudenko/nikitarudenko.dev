@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import BaseCard from '@components/Card'
+import BaseCard from '@components/ContentCard'
 
 export const Card = styled(BaseCard)(
   ({ theme: { breakpoints } }) => css`

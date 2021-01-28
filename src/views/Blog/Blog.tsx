@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-import Card from '@components/Card'
 import Layout from '@components/Layout'
 import ContentList from '@components/Layout/ContentList'
 import { TBlogPostPreview } from '@typings/contentTypes'
@@ -21,7 +20,7 @@ const Blog = ({ blogPosts }: Props): JSX.Element => {
             const formattedDate = new Date(date).toLocaleDateString('en-US')
 
             return (
-              <Card key={id}>
+              <div key={id}>
                 <Link href={href} passHref>
                   <Styled.ArticleLink>
                     <Styled.Title>{title}</Styled.Title>
@@ -29,7 +28,7 @@ const Blog = ({ blogPosts }: Props): JSX.Element => {
                     <Styled.Excerpt>{excerpt}</Styled.Excerpt>
                   </Styled.ArticleLink>
                 </Link>
-              </Card>
+              </div>
             )
           })}
         </ContentList>

@@ -45,6 +45,7 @@ export const Subtitle = styled.h2(
     svg {
       width: 1rem;
       height: 1rem;
+      display: inline-block;
 
       @media (min-width: ${breakpoints.md}) {
         width: 1.3rem;

@@ -9,8 +9,8 @@ function StackCard({ stack }: Props) {
   return (
     <Styled.Card className="p-4 md:p-6" title="Core stack">
       <Styled.Grid>
-        {stack.map((technology) => (
-          <Tag key={technology} label={technology} />
+        {stack.map((t) => (
+          <Tag key={t}>{t}</Tag>
         ))}
       </Styled.Grid>
     </Styled.Card>

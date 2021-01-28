@@ -1,4 +1,4 @@
-const constants = { headerHeight: '6rem' }
+const constants = { headerHeight: '6rem', containerWidth: '128rem' }
 
 const breakpoints = {
   'sm': '640px',
@@ -345,7 +345,7 @@ const colors = {
   bgPrimary: palette.base.white,
   primary: '#ffe5b8',
   secondary: '#f87a5d',
-  accent: '#f6e05e',
+  accent: '#f7f382',
   tertiary: palette.coolGray[100],
   fontPrimary: palette.blueGray[800],
   fontSecondary: '#999',

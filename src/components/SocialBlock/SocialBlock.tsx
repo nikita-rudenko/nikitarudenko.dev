@@ -1,13 +1,12 @@
 import Link from 'next/link'
 
-import Card from '@components/Card'
 import { SOCIAL_LINKS_LIST } from '@constants/links'
 
 function SocialBlock() {
   return (
     <div className="grid content-center justify-center grid-cols-4 col-span-1 gap-2 md:gap-5 sm:col-span-2">
       {SOCIAL_LINKS_LIST.map(({ label, href, emoji }) => (
-        <Card
+        <div
           key={label}
           className="text-sm font-bold md:text-xl font-body hover-bg-grayout"
         >
@@ -19,7 +18,7 @@ function SocialBlock() {
               <span>{label}</span>
             </a>
           </Link>
-        </Card>
+        </div>
       ))}
     </div>
   )

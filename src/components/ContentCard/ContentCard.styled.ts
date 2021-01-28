@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const Card = styled.div(
+export const ContentCard = styled.div(
   ({ theme: { colors, boxShadow } }) => css`
     background-color: ${colors.bgPrimary};
     border-radius: 0.375rem;

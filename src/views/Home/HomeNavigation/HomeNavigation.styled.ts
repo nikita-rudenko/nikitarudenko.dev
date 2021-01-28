@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import CardComponent from '@components/Card'
+import CardComponent from '@components/ContentCard'
 
 export const NavigationContainer = styled.nav(
   ({ theme: { breakpoints } }) => css`

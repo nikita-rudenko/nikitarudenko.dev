@@ -1,1 +1,1 @@
-export { default } from './Title.styled'
+export { default } from './Title'

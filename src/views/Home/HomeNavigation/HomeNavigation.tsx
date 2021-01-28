@@ -8,14 +8,14 @@ const HomeNavigation = () => {
   return (
     <Styled.NavigationContainer>
       {INTERNAL_LINKS_LIST.slice(1, Infinity).map(({ label, href, emoji }) => (
-        <Styled.Card key={label}>
+        <div key={label}>
           <Link href={href} passHref>
             <Styled.NavLink>
               <Styled.EmojiWrapper>{emoji}</Styled.EmojiWrapper>
               <span>{label}</span>
             </Styled.NavLink>
           </Link>
-        </Styled.Card>
+        </div>
       ))}
     </Styled.NavigationContainer>
   )

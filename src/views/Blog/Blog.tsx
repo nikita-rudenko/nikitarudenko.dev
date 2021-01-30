@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import Card from '@components/Card'
 import Layout from '@components/Layout'
 import ContentList from '@components/Layout/ContentList'
 import { TBlogPostPreview } from '@typings/contentTypes'
@@ -17,18 +18,16 @@ const Blog = ({ blogPosts }: Props): JSX.Element => {
       <Layout.Body backgroundType="gradient">
         <ContentList layoutType="column" title="Blog">
           {blogPosts.map(({ href, title, date, id, excerpt }) => {
-            const formattedDate = new Date(date).toLocaleDateString('en-US')
-
             return (
-              <div key={id}>
+              <Card key={id}>
                 <Link href={href} passHref>
-                  <Styled.ArticleLink>
+                  <Styled.BlogPostLink>
                     <Styled.Title>{title}</Styled.Title>
-                    <Styled.PublishDate>{formattedDate}</Styled.PublishDate>
+                    <Styled.PublishDate>{date}</Styled.PublishDate>
                     <Styled.Excerpt>{excerpt}</Styled.Excerpt>
-                  </Styled.ArticleLink>
+                  </Styled.BlogPostLink>
                 </Link>
-              </div>
+              </Card>
             )
           })}
         </ContentList>

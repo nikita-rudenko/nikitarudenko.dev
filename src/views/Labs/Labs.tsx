@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import Card from '@components/Card'
 import EmojiSVG from '@components/EmojiSVG'
 import Layout from '@components/Layout'
 import ContentList from '@components/Layout/ContentList'
@@ -20,9 +21,9 @@ const Labs = ({ projects }: Props): JSX.Element => {
         <ContentList layoutType="grid" title="Labs">
           {projects.map(({ href, title, id, excerpt, tags, emoji }) => {
             return (
-              <div key={id}>
+              <Card key={id}>
                 <Link href={href} passHref>
-                  <Styled.ArticleLink>
+                  <Styled.ProjectLink>
                     <Styled.Icon>
                       <EmojiSVG src={emoji} />
                     </Styled.Icon>
@@ -33,9 +34,9 @@ const Labs = ({ projects }: Props): JSX.Element => {
                         <Tag key={t}>{t}</Tag>
                       ))}
                     </Styled.Tags>
-                  </Styled.ArticleLink>
+                  </Styled.ProjectLink>
                 </Link>
-              </div>
+              </Card>
             )
           })}
         </ContentList>

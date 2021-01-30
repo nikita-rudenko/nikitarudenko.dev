@@ -31,7 +31,13 @@ export const List = styled.div<{
     row-gap: 1rem;
     column-gap: 1rem;
     display: grid;
-    grid-template-columns: ${layoutType === 'grid' ? 'repeat(2, 1fr)' : '1fr'};
     grid-auto-rows: min-content;
+    grid-template-columns: '1fr';
+
+    @media (min-width: ${breakpoints.md}) {
+      grid-template-columns: ${layoutType === 'grid'
+        ? 'repeat(2, 1fr)'
+        : '1fr'};
+    }
   `
 )

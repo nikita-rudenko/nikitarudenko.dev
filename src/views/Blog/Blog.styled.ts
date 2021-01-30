@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const ArticleLink = styled.a(
+export const BlogPostLink = styled.a(
   ({ theme: { colors, font, breakpoints } }) => css`
     display: grid;
     padding: 1rem;
@@ -8,6 +8,8 @@ export const ArticleLink = styled.a(
     border-radius: 0.375rem;
     transition: background-color 0.2s ease-in;
     font-weight: ${font.weight.bold};
+    height: 100%;
+    align-content: baseline;
     grid-template-areas:
       'title'
       'excerpt';

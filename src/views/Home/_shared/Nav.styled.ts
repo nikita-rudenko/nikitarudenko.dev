@@ -20,12 +20,13 @@ export const NavContainer = styled.nav(
 )
 
 export const NavLink = styled.a(
-  ({ theme: { breakpoints, colors } }) => css`
+  ({ theme: { borderRadius, breakpoints, colors } }) => css`
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
     flex-direction: column;
+    border-radius: ${borderRadius.md};
 
     &:hover,
     &:focus {
@@ -44,6 +45,7 @@ export const NavIconWrapper = styled.span(
     display: flex;
     justify-content: center;
     align-items: center;
+
     @media (min-width: ${breakpoints.sm}) {
       margin-right: 0.5rem;
     }

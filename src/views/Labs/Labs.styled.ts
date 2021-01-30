@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components'
 
-export const ArticleLink = styled.a(
-  ({ theme: { colors, font } }) => css`
+export const ProjectLink = styled.a(
+  ({ theme: { borderRadius, colors, font } }) => css`
     display: grid;
     padding: 1rem;
-    border-radius: 0.375rem;
+    border-radius: ${borderRadius.md};
     transition: background-color 0.2s ease-in;
     font-weight: ${font.weight.bold};
     grid-template-columns: 2rem 1fr;
@@ -25,6 +25,8 @@ export const Icon = styled.div(
   ({ theme: { font } }) => css`
     grid-area: icon;
     font-size: ${font.size.xl};
+    display: flex;
+    align-items: center;
   `
 )
 
@@ -53,7 +55,7 @@ export const Excerpt = styled.div(
 
 export const Tags = styled.div(
   () => css`
-    margin-top: 1rem;
+    padding-top: 1rem;
     grid-area: tags;
     justify-self: end;
     display: grid;

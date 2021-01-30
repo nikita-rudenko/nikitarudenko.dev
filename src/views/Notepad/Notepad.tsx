@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import Card from '@components/Card'
 import Layout from '@components/Layout'
 import ContentList from '@components/Layout/ContentList'
 import Tag from '@components/Tag'
@@ -16,10 +17,10 @@ const Notepad = ({ snippets }: Props): JSX.Element => {
     <Layout>
       <Layout.Header />
       <Layout.Body backgroundType="gradient">
-        <ContentList title="Notepad" layoutType="grid">
+        <ContentList layoutType="grid" title="Notepad">
           {snippets.map(({ href, title, id, excerpt, tags }) => {
             return (
-              <div key={id}>
+              <Card key={id}>
                 <Link href={href} passHref>
                   <Styled.ArticleLink>
                     <Styled.Title>{title}</Styled.Title>
@@ -31,7 +32,7 @@ const Notepad = ({ snippets }: Props): JSX.Element => {
                     </Styled.Tags>
                   </Styled.ArticleLink>
                 </Link>
-              </div>
+              </Card>
             )
           })}
         </ContentList>

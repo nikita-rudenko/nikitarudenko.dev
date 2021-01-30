@@ -7,7 +7,6 @@ export const Wrapper = styled.div(
     box-shadow: ${boxShadow.md};
     overflow: hidden;
     padding: 1rem;
-    /* grid-column: span 1 / span 2; */
 
     @media (min-width: ${breakpoints.md}) {
       padding: 1.5rem;

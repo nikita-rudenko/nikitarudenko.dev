@@ -7,7 +7,6 @@ export const Card = styled.div(
     box-shadow: ${boxShadow.md};
     font-size: ${font.size.sm};
     font-weight: ${font.weight.bold};
-    overflow: hidden;
 
     @media (min-width: ${breakpoints.md}) {
       font-size: ${font.size.xl};

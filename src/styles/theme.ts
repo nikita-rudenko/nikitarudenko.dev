@@ -342,7 +342,7 @@ const gradients = {
 }
 
 const borderRadius = {
-  md: '0.37rem',
+  md: '0.35rem',
 }
 
 const colors = {

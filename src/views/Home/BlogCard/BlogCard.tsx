@@ -12,7 +12,7 @@ type Props = {
 const BlogCard = ({ blogPosts }: Props) => {
   return (
     <Styled.Card href="/blog" title="Blog">
-      <List layoutType="grid">
+      <List layoutType="column">
         {blogPosts.map(({ href, title, date, id, excerpt }) => {
           return (
             <Link key={id} href={href} passHref>

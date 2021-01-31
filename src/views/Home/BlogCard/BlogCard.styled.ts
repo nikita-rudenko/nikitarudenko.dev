@@ -55,4 +55,8 @@ export const PublishDate = styled.div(
   `
 )
 
-export const Excerpt = BaseExcerpt
+export const Excerpt = styled(BaseExcerpt)(
+  () => css`
+    grid-area: excerpt;
+  `
+)

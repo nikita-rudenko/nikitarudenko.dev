@@ -1,17 +1,11 @@
 import styled, { css } from 'styled-components'
 
-import CardComponent from '@components/ContentCard'
+import ContentCard from '@components/ContentCard'
 
-export const Card = styled(CardComponent)(
+export const Card = styled(ContentCard)(
   ({ theme: { breakpoints } }) => css`
-    padding: 1rem;
-
     @media (min-width: ${breakpoints.sm}) {
       grid-column: span 2 / span 2;
-    }
-
-    @media (min-width: ${breakpoints.md}) {
-      padding: 1.5rem;
     }
   `
 )

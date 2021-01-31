@@ -1,12 +1,15 @@
 import styled, { css } from 'styled-components'
 
-export const NavContainer = styled.nav(
+export const NavRow = styled.nav<{
+  listLength: number
+}>(
   ({ theme: { breakpoints } }) => css`
     grid-column: 1 / 2;
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
     gap: 0.5rem;
 
     @media (min-width: ${breakpoints.sm}) {

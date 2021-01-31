@@ -1,5 +1,6 @@
 import Layout from '@components/Layout'
-// import SocialBlock from '@components/SocialBlock'
+import NavRow from '@components/NavRow'
+import { SOCIAL_LINKS_LIST } from '@constants/links'
 import { TAboutPageData } from '@typings/contentTypes'
 
 import * as Styled from './About.styled'
@@ -21,7 +22,7 @@ const About = ({
           <BioCard avatar={avatar} bio={bio} />
           <StackCard stack={stack} />
           <LearningCard learning={learning} />
-          {/* <SocialBlock /> */}
+          <NavRow linksList={SOCIAL_LINKS_LIST} />
         </Styled.Grid>
       </Layout.Body>
       <Layout.Footer />

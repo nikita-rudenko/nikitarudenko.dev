@@ -1,3 +1,4 @@
+import ContentCard from '@components/ContentCard'
 import MarkdownContent from '@components/MarkdownContent'
 import { TAboutPageData } from '@typings/contentTypes'
 
@@ -7,11 +8,11 @@ type Props = Pick<TAboutPageData, 'learning'>
 
 function LearningCard({ learning }: Props) {
   return (
-    <Styled.Card title="Learning">
+    <ContentCard title="Learning">
       <Styled.Text>
         <MarkdownContent content={learning} />
       </Styled.Text>
-    </Styled.Card>
+    </ContentCard>
   )
 }
 

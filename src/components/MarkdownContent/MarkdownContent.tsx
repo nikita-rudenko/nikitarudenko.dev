@@ -2,26 +2,26 @@ import Markdown from 'markdown-to-jsx'
 
 import Blockquote from './Blockquote'
 import CodeBlock from './CodeBlock'
-import createHeading from './Heading'
+import Heading from './Heading'
 import Image from './Image'
-import Link from './Link'
-import { OrderedList, UnorderedList, ListItem } from './List'
+import InlineLink from './InlineLink'
+import { OrderedList, UnorderedList, ListItem } from './Lists'
 import Paragraph from './Paragraph'
 
 const options = {
   overrides: {
     img: { component: Image },
     p: { component: Paragraph },
-    a: { component: Link },
+    a: { component: InlineLink },
     ol: { component: OrderedList },
     ul: { component: UnorderedList },
     li: { component: ListItem },
-    h1: { component: createHeading('h1') },
-    h2: { component: createHeading('h2') },
-    h3: { component: createHeading('h3') },
-    h4: { component: createHeading('h4') },
-    h5: { component: createHeading('h5') },
-    h6: { component: createHeading('h6') },
+    h1: { component: Heading, props: { variant: 'h1' } },
+    h2: { component: Heading, props: { variant: 'h2' } },
+    h3: { component: Heading, props: { variant: 'h3' } },
+    h4: { component: Heading, props: { variant: 'h4' } },
+    h5: { component: Heading, props: { variant: 'h5' } },
+    h6: { component: Heading, props: { variant: 'h6' } },
     blockquote: { component: Blockquote },
     code: { component: CodeBlock },
   },

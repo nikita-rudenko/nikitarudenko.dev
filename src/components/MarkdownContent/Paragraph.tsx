@@ -1,7 +1,9 @@
-import { TRenderProps } from '@typings/commonPropTypes'
+import styled, { css } from 'styled-components'
 
-const Paragraph = ({ children }: TRenderProps) => {
-  return <p className="mb-4">{children}</p>
-}
+const Paragraph = styled.p(
+  () => css`
+    margin-bottom: 1rem;
+  `
+)
 
 export default Paragraph

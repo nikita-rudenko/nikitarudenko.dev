@@ -9,7 +9,7 @@
     "description": "Bulk styled-components import"
   },
   "Basic styled-component": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "sc",
     "body": [
       "export const $1 = styled.$2(",
@@ -21,7 +21,7 @@
     "description": "Basic styled-component boilerplate"
   },
   "Media-query": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "mq",
     "body": [
       "@media (min-width: ${breakpoints.}) {",

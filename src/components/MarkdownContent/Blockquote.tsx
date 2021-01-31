@@ -1,11 +1,23 @@
-import { TRenderProps } from '@typings/commonPropTypes'
+import styled, { css } from 'styled-components'
 
-const Blockquote = ({ children }: TRenderProps) => {
-  return (
-    <blockquote className="pl-2 mb-4 font-hairline border-l-2 border-gray-700 md:pl-4">
-      {children}
-    </blockquote>
-  )
-}
+const Blockquote = styled.blockquote(
+  ({ theme: { breakpoints, colors, font } }) => css`
+    padding-left: 0.5rem;
+    font-weight: ${font.weight.thin};
+    border-left-width: 0.2rem;
+    border-color: ${colors.fontSecondary};
+    background-color: ${colors.tertiary};
+    padding: 1rem;
+
+    // TODO: handle
+    > p {
+      margin: 0;
+    }
+
+    @media (min-width: ${breakpoints.md}) {
+      padding-left: 1rem;
+    }
+  `
+)
 
 export default Blockquote

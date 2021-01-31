@@ -22,7 +22,7 @@ const Notepad = ({ snippets }: Props): JSX.Element => {
             return (
               <Card key={id}>
                 <Link href={href} passHref>
-                  <Styled.ArticleLink>
+                  <Styled.SnippetLink>
                     <Styled.Title>{title}</Styled.Title>
                     <Styled.Excerpt>{excerpt}</Styled.Excerpt>
                     <Styled.Tags>
@@ -30,7 +30,7 @@ const Notepad = ({ snippets }: Props): JSX.Element => {
                         <Tag key={t}>{t}</Tag>
                       ))}
                     </Styled.Tags>
-                  </Styled.ArticleLink>
+                  </Styled.SnippetLink>
                 </Link>
               </Card>
             )

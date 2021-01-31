@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const ArticleLink = styled.a(
+export const SnippetLink = styled.a(
   ({ theme: { colors, font } }) => css`
     display: grid;
     padding: 1rem;
@@ -17,13 +17,6 @@ export const ArticleLink = styled.a(
     &:focus {
       background-color: ${colors.tertiary};
     }
-  `
-)
-
-export const Icon = styled.div(
-  ({ theme: { font } }) => css`
-    grid-area: icon;
-    font-size: ${font.size.xl};
   `
 )
 

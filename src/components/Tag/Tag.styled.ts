@@ -2,7 +2,8 @@ import styled, { css } from 'styled-components'
 
 export const Tag = styled.div(
   ({ theme: { borderRadius, colors, font } }) => css`
-    display: inline;
+    display: inline-flex;
+    justify-content: center;
     padding: 0 0.25rem;
     font-size: ${font.size.sm};
     font-weight: ${font.weight.bold};

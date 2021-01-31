@@ -12,7 +12,7 @@ const GithubLink = ({ href }: Props) => {
       className="bg-monochrome-700"
       href={href}
       icon={<GithubIcon />}
-      label="Github"
+      label="GitHub"
     />
   )
 }

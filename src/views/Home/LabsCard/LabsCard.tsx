@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import ContentCard from '@components/ContentCard'
 import EmojiSVG from '@components/EmojiSVG'
-import { List } from '@components/Layout/ContentList/ContentList.styled'
+import List from '@components/List'
 import { TPRojectPreview } from '@typings/contentTypes'
 
 import * as Styled from './LabsCard.styled'

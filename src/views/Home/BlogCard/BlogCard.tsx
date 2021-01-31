@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { List } from '@components/Layout/ContentList/ContentList.styled'
+import List from '@components/List'
 import { TBlogPostPreview } from '@typings/contentTypes'
 
 import * as Styled from './BlogCard.styled'
@@ -12,7 +12,7 @@ type Props = {
 const BlogCard = ({ blogPosts }: Props) => {
   return (
     <Styled.Card href="/blog" title="Blog">
-      <List layoutType="column">
+      <List layoutType="grid">
         {blogPosts.map(({ href, title, date, id, excerpt }) => {
           return (
             <Link key={id} href={href} passHref>

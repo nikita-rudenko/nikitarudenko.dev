@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import ContentCard from '@components/ContentCard'
-import { List } from '@components/Layout/ContentList/ContentList.styled'
+import List from '@components/List'
 import { TSnippetPreview } from '@typings/contentTypes'
 
 import * as Styled from './NotepadCard.styled'

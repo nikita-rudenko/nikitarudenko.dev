@@ -114,6 +114,11 @@ const minireset = css`
     font-size: inherit;
     font-weight: inherit;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `
 
 export default minireset

@@ -20,4 +20,13 @@
     ],
     "description": "Basic styled-component boilerplate"
   },
+  "Media-query": {
+    "scope": "javascript,typescript",
+    "prefix": "mq",
+    "body": [
+      "@media (min-width: ${breakpoints.}) {",
+      "  $1",
+      "}"
+    ]
+  }
 }

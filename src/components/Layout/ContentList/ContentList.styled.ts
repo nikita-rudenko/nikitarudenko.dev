@@ -27,7 +27,7 @@ export const List = styled.div<{
   ({ layoutType, theme: { breakpoints } }) => css`
     max-width: ${breakpoints.md};
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 1rem 0;
     row-gap: 1rem;
     column-gap: 1rem;
     display: grid;

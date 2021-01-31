@@ -1,4 +1,4 @@
-import Title from '@components/Title'
+import StickerHeading from '@components/StickerHeading'
 import { TRenderProps } from '@typings/commonPropTypes'
 
 import * as Styled from './ContentList.styled'
@@ -12,7 +12,7 @@ const ContentList = ({ title, children, layoutType }: Props) => {
   return (
     <>
       <Styled.ContentHeader>
-        <Title>{title}</Title>
+        <StickerHeading>{title}</StickerHeading>
       </Styled.ContentHeader>
       <Styled.ContentBody>
         <Styled.List layoutType={layoutType}>{children}</Styled.List>

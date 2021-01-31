@@ -1,43 +1,17 @@
 import styled, { css } from 'styled-components'
 
-export const ProjectLink = styled.a(
-  ({ theme: { colors, font } }) => css`
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    column-gap: 0.5rem;
-    padding: 0.5rem;
-    border-radius: 0.375rem;
-    transition: background-color 0.2s ease-in;
-    font-weight: ${font.weight.bold};
+import {
+  PreviewLink,
+  Title as BaseTitle,
+  Excerpt as BaseExcerpt,
+} from '../_shared/PreviewLink.styled'
 
-    &:hover,
-    &:focus {
-      background-color: ${colors.tertiary};
-    }
+export const SnippetLink = styled(PreviewLink)(
+  () => css`
+    display: grid;
+    row-gap: 0.4rem;
   `
 )
 
-export const Title = styled.div(
-  ({ theme: { font, breakpoints } }) => css`
-    grid-area: title;
-    font-size: ${font.size.base};
-    line-height: 2em;
-
-    @media (min-width: ${breakpoints.md}) {
-      font-size: ${font.size.lg};
-    }
-  `
-)
-
-export const Excerpt = styled.div(
-  ({ theme: { breakpoints, colors, font } }) => css`
-    grid-area: excerpt;
-    color: ${colors.fontSecondary};
-    font-size: ${font.size.sm};
-
-    @media (min-width: ${breakpoints.md}) {
-      font-size: ${font.size.base};
-    }
-  `
-)
+export const Title = BaseTitle
+export const Excerpt = BaseExcerpt

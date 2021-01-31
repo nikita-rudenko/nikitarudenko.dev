@@ -1,4 +1,4 @@
-const constants = { headerHeight: '6rem', containerWidth: '128rem' }
+const constants = { headerHeight: '6rem', containerWidth: '48rem' }
 
 const breakpoints = {
   'sm': '640px',
@@ -342,7 +342,7 @@ const gradients = {
 }
 
 const borderRadius = {
-  md: '0.35rem',
+  md: '0.375rem',
 }
 
 const colors = {

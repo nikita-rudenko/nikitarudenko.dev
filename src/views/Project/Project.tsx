@@ -3,8 +3,8 @@ import clsx from 'clsx'
 import { GithubLink, OtherLink } from '@components/ExtLinks'
 import Layout from '@components/Layout'
 import MarkdownContent from '@components/MarkdownContent'
+import StickerHeading from '@components/StickerHeading'
 import Tag from '@components/Tag'
-import Title from '@components/Title'
 import { TProject } from '@typings/contentTypes'
 
 type Props = {
@@ -20,7 +20,7 @@ const Project = ({
       <Layout.Body>
         <div className={clsx('flex flex-col px-8 py-16 md:py-24 font-display')}>
           <div className="max-w-screen-lg m-auto text-3xl font-bold text-center md:text-4xl">
-            <Title>{title}</Title>
+            <StickerHeading>{title}</StickerHeading>
           </div>
         </div>
 

@@ -1,25 +1,22 @@
 import styled, { css } from 'styled-components'
 
-export const ProjectLink = styled.a(
-  ({ theme: { colors, font } }) => css`
+import {
+  PreviewLink,
+  Title as BaseTitle,
+  Excerpt as BaseExcerpt,
+} from '../_shared/PreviewLink.styled'
+
+export const ProjectLink = styled(PreviewLink)(
+  () => css`
     display: grid;
-    margin-top: 1rem;
     grid-template-columns: 1.2rem 1fr;
     column-gap: 0.5rem;
+    row-gap: 0.4rem;
     grid-template-areas:
       'icon title'
       'excerpt excerpt';
     align-content: center;
     justify-content: center;
-    padding: 0.5rem;
-    border-radius: 0.375rem;
-    transition: background-color 0.2s ease-in;
-    font-weight: ${font.weight.bold};
-
-    &:hover,
-    &:focus {
-      background-color: ${colors.tertiary};
-    }
   `
 )
 
@@ -33,26 +30,14 @@ export const Icon = styled.div(
   `
 )
 
-export const Title = styled.div(
-  ({ theme: { font, breakpoints } }) => css`
+export const Title = styled(BaseTitle)(
+  () => css`
     grid-area: title;
-    font-size: ${font.size.base};
-    line-height: 2em;
-
-    @media (min-width: ${breakpoints.md}) {
-      font-size: ${font.size.lg};
-    }
   `
 )
 
-export const Excerpt = styled.div(
-  ({ theme: { breakpoints, colors, font } }) => css`
+export const Excerpt = styled(BaseExcerpt)(
+  () => css`
     grid-area: excerpt;
-    color: ${colors.fontSecondary};
-    font-size: ${font.size.sm};
-
-    @media (min-width: ${breakpoints.md}) {
-      font-size: ${font.size.base};
-    }
   `
 )

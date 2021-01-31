@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components'
 
 export const BlogPostLink = styled.a(
-  ({ theme: { colors, font, breakpoints } }) => css`
+  ({ theme: { borderRadius, colors, font, breakpoints } }) => css`
     display: grid;
     padding: 1rem;
     grid-template-columns: 1fr;
-    border-radius: 0.375rem;
+    border-radius: ${borderRadius.md};
     transition: background-color 0.2s ease-in;
     font-weight: ${font.weight.bold};
     height: 100%;

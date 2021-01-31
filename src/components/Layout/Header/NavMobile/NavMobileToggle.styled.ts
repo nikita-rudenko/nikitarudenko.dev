@@ -20,7 +20,7 @@ export const Toggle = styled.div<{}>(
 )
 
 export const ToggleIcon = styled.div<{ isOpen: boolean }>(
-  ({ isOpen, theme: { colors } }) => css`
+  ({ isOpen, theme: { borderRadius, colors } }) => css`
     width: 26px;
     height: 20px;
     position: relative;
@@ -34,7 +34,7 @@ export const ToggleIcon = styled.div<{ isOpen: boolean }>(
       position: absolute;
       height: 3px;
       width: 100%;
-      border-radius: 0.375rem;
+      border-radius: ${borderRadius.md};
       opacity: 1;
       left: 0;
       transform: rotate(0deg);

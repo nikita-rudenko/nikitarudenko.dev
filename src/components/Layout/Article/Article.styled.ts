@@ -61,7 +61,6 @@ export const Tags = styled.div(
     grid-auto-flow: row;
     grid-auto-columns: min-content;
     gap: 0.4rem;
-    /* justify-items: center; */
     align-items: center;
 
     @media (min-width: ${breakpoints.sm}) {
@@ -76,7 +75,6 @@ export const Links = styled.div(
     grid-auto-flow: row;
     grid-auto-columns: min-content;
     gap: 0.4rem;
-    /* justify-items: center; */
     align-items: center;
     justify-content: center;
 

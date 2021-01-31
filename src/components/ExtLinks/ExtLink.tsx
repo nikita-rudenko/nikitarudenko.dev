@@ -1,26 +1,20 @@
-import clsx from 'clsx'
 import { ReactNode } from 'react'
+
+import * as Styled from './ExtLink.styled'
 
 type Props = {
   href: string
   label: string
   icon: ReactNode
-  className?: string
+  color?: string
 }
 
-const ExtLink = ({ href, label, icon, className }: Props) => {
+const ExtLink = ({ href, label, icon, color }: Props) => {
   return (
-    <a
-      href={href}
-      style={{ display: 'flex', justifyContent: 'center' }}
-      className={clsx(
-        'flex leading-6 text-sm items-center px-2 py-1 font-bold text-white rounded-md hover:opacity-75',
-        className
-      )}
-    >
-      <span className="mr-1">{label}</span>
-      {icon}
-    </a>
+    <Styled.Link href={href} color={color}>
+      <span>{label}</span>
+      <span>{icon}</span>
+    </Styled.Link>
   )
 }
 

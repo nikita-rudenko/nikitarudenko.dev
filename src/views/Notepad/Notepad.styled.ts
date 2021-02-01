@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components'
 
 export const SnippetLink = styled.a(
-  ({ theme: { colors, font } }) => css`
+  ({ theme: { borderRadius, colors, font } }) => css`
     display: grid;
     padding: 1rem;
-    border-radius: 0.375rem;
+    border-radius: ${borderRadius.md};
     transition: background-color 0.2s ease-in;
     font-weight: ${font.weight.bold};
     row-gap: 0.2rem;
@@ -15,7 +15,7 @@ export const SnippetLink = styled.a(
 
     &:hover,
     &:focus {
-      background-color: ${colors.tertiary};
+      background-color: ${colors.bgSecondary};
     }
   `
 )

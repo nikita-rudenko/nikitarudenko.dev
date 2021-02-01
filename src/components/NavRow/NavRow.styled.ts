@@ -33,7 +33,7 @@ export const NavLink = styled.a(
 
     &:hover,
     &:focus {
-      background-color: ${colors.tertiary};
+      background-color: ${colors.bgSecondary};
     }
 
     @media (min-width: ${breakpoints.sm}) {

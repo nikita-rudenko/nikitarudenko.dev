@@ -21,9 +21,9 @@ export const ProjectLink = styled(PreviewLink)(
 )
 
 export const Icon = styled.div(
-  ({ theme: { font } }) => css`
+  () => css`
     grid-area: icon;
-    font-size: ${font.size.xl};
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
     align-items: center;

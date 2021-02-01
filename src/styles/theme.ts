@@ -347,10 +347,10 @@ const borderRadius = {
 
 const colors = {
   bgPrimary: palette.base.white,
-  primary: '#ffe5b8',
-  secondary: '#f87a5d',
+  bgSecondary: palette.coolGray[100],
   accent: '#f7f382',
-  tertiary: palette.coolGray[100],
+  border: palette.coolGray[200],
+  link: palette.blue[900],
   fontPrimary: palette.blueGray[800],
   fontSecondary: '#999',
 }

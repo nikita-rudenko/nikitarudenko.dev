@@ -42,14 +42,15 @@ export const Subtitle = styled.h2(
     max-width: 20rem;
     font-size: ${font.size.base};
 
-    svg {
-      width: 1rem;
-      height: 1rem;
+    > svg {
+      width: 1.2rem;
+      height: 1.2rem;
       display: inline-block;
+      vertical-align: middle;
 
       @media (min-width: ${breakpoints.md}) {
-        width: 1.3rem;
-        height: 1.3rem;
+        width: 1.5rem;
+        height: 1.5rem;
       }
     }
 
@@ -61,7 +62,7 @@ export const Subtitle = styled.h2(
 )
 
 export const TechLink = styled.a(
-  ({ theme: { font }, color }) => css`
+  ({ theme: { breakpoints, font }, color }) => css`
     display: inline-flex;
     padding: 0 0.1rem;
     align-items: center;
@@ -70,6 +71,14 @@ export const TechLink = styled.a(
 
     > svg {
       margin-left: 0.2rem;
+      width: 1rem;
+      height: 1rem;
+      display: inline-block;
+
+      @media (min-width: ${breakpoints.md}) {
+        width: 1.3rem;
+        height: 1.3rem;
+      }
     }
   `
 )

@@ -4,9 +4,9 @@ import styled, { css } from 'styled-components'
 import { TSpreadProps } from '@typings/commonPropTypes'
 
 const InlineLink = styled.a(
-  ({ theme: { font } }) => css`
+  ({ theme: { colors, font } }) => css`
     font-weight: ${font.weight.bold};
-    color: #434190;
+    color: ${colors.link};
 
     &:hover {
       text-decoration: underline;

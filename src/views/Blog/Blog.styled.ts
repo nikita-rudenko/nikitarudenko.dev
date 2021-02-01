@@ -16,7 +16,7 @@ export const BlogPostLink = styled.a(
 
     &:hover,
     &:focus {
-      background-color: ${colors.tertiary};
+      background-color: ${colors.bgSecondary};
     }
 
     @media (min-width: ${breakpoints.md}) {

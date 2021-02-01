@@ -15,8 +15,8 @@ const HeroSection = (): JSX.Element => {
       </Styled.Title>
 
       <Styled.Subtitle>
-        I am a <strong>web developer</strong> who <HeartIcon /> to build great
-        things with{' '}
+        I am a <strong>web developer</strong> who{' '}
+        <HeartIcon width="2em" height="2em" /> to build great things with{' '}
         <Styled.TechLink color="#2b6cb0" href="https://reactjs.org/">
           React <ReactIcon />
         </Styled.TechLink>{' '}

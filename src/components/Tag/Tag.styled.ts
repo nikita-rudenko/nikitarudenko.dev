@@ -9,7 +9,7 @@ export const Tag = styled.div(
     font-weight: ${font.weight.bold};
     background-color: inherit;
     color: ${colors.fontPrimary};
-    border: 2px solid ${colors.fontSecondary};
+    border: 2px solid ${colors.border};
     border-radius: ${borderRadius.md};
   `
 )

@@ -16,7 +16,7 @@ export const ProjectLink = styled.a(
 
     &:hover,
     &:focus {
-      background-color: ${colors.tertiary};
+      background-color: ${colors.bgSecondary};
     }
   `
 )

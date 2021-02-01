@@ -9,7 +9,7 @@ export const PreviewLink = styled.a(
 
     &:hover,
     &:focus {
-      background-color: ${colors.tertiary};
+      background-color: ${colors.bgSecondary};
     }
   `
 )

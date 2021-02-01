@@ -26,12 +26,28 @@ export const HeadingWrapper = styled.h1<{ variant: HeadingVariant }>(
     }
   `
 )
-
 export const HeadingLink = styled.a(
-  () => css`
+  ({ theme: { breakpoints, colors } }) => css`
+    position: relative;
+    transition: all 0.3s linear;
+
+    @media (min-width: ${breakpoints.md}) {
+      &:before {
+        transition: opacity 0.3s linear;
+        content: '#';
+        position: absolute;
+        left: -0.7em;
+        opacity: 0;
+      }
+    }
+
     &:hover {
-      color: #434190;
+      color: ${colors.link};
       text-decoration: underline;
+
+      &:before {
+        opacity: 0.7;
+      }
     }
   `
 )

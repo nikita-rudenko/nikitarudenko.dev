@@ -43,7 +43,7 @@ export const ArticleMeta = styled.aside(
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    background-color: ${colors.tertiary};
+    background-color: ${colors.bgSecondary};
     padding: 0.8rem;
     gap: 0.4rem;
     margin-bottom: 1rem;

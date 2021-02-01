@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components'
 
+import List from '@components/List'
+
 export const Wrapper = styled.div(
   ({ theme: { breakpoints, borderRadius, boxShadow, colors } }) => css`
     background-color: ${colors.bgPrimary};
@@ -7,6 +9,10 @@ export const Wrapper = styled.div(
     box-shadow: ${boxShadow.md};
     overflow: hidden;
     padding: 1rem;
+
+    ${List} {
+      padding: 1rem 0;
+    }
 
     @media (min-width: ${breakpoints.md}) {
       padding: 1.5rem;

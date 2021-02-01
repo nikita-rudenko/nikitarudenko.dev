@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const Toggle = styled.div<{}>(
-  ({ theme: { boxShadow, breakpoints } }) => css`
+  ({ theme: { colors, borderRadius, boxShadow, breakpoints } }) => css`
     display: block;
     position: fixed;
     right: 1.4rem;
@@ -9,9 +9,9 @@ export const Toggle = styled.div<{}>(
     z-index: 40;
     box-shadow: ${boxShadow.md};
     padding: 0.6rem 0.8rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 0.375rem;
-    background-color: #edf2f7;
+    border: 2px solid ${colors.border};
+    border-radius: ${borderRadius.md};
+    background-color: ${colors.bgSecondary};
 
     @media (min-width: ${breakpoints.md}) {
       display: none;

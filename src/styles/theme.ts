@@ -1,4 +1,10 @@
-const constants = { headerHeight: '6rem', containerWidth: '48rem' }
+const constants = {
+  headerHeight: '6rem',
+  containerWidth: '48rem',
+  zIndex: {
+    nav: 40,
+  },
+}
 
 const breakpoints = {
   'sm': '640px',

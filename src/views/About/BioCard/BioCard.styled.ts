@@ -24,12 +24,12 @@ export const Grid = styled.div(
 )
 
 export const Avatar = styled.div(
-  ({ theme: { breakpoints } }) => css`
+  ({ theme: { breakpoints, mixins } }) => css`
     display: none;
     width: 8rem;
     height: 8rem;
-    border-radius: 8px;
     overflow: hidden;
+    ${mixins.rounded}
 
     @media (min-width: ${breakpoints.sm}) {
       display: block;

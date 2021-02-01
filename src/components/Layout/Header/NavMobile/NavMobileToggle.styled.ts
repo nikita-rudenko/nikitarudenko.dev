@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components'
 
 export const Toggle = styled.div<{}>(
-  ({ theme: { colors, boxShadow, breakpoints, mixins } }) => css`
+  ({ theme: { colors, boxShadow, breakpoints, mixins, constants } }) => css`
     display: block;
     position: fixed;
     right: 1.4rem;
     bottom: 1.4rem;
-    z-index: 40;
+    z-index: ${constants.zIndex.nav};
     box-shadow: ${boxShadow.md};
     padding: 0.6rem 0.8rem;
     border: 2px solid ${colors.border};

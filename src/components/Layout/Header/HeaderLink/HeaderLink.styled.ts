@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const Link = styled.a<{ isActive: boolean }>(
-  ({ theme: { borderRadius, colors, font }, isActive }) => css`
+  ({ theme: { colors, font, mixins }, isActive }) => css`
     display: grid;
     grid-template-columns: 0.6rem auto;
     justify-content: center;
@@ -11,7 +11,7 @@ export const Link = styled.a<{ isActive: boolean }>(
     font-weight: ${font.weight.bold};
     padding: 0.5rem 0.75rem;
     border: 2px solid ${colors.border};
-    border-radius: ${borderRadius.md};
+    ${mixins.rounded}
 
     ${isActive && `background-color: ${colors.border};`}
 

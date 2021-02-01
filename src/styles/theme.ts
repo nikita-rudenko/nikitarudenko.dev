@@ -341,8 +341,8 @@ const gradients = {
   )`,
 }
 
-const borderRadius = {
-  md: '0.375rem',
+const mixins = {
+  rounded: 'border-radius: 0.375rem;',
 }
 
 const colors = {
@@ -356,12 +356,12 @@ const colors = {
 }
 
 export default {
-  borderRadius,
   boxShadow,
   breakpoints,
   colors,
   constants,
   font,
   gradients,
+  mixins,
   palette,
 }

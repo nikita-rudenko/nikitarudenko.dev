@@ -1,11 +1,10 @@
 import styled, { css } from 'styled-components'
 
 export const BlogPostLink = styled.a(
-  ({ theme: { borderRadius, colors, font, breakpoints } }) => css`
+  ({ theme: { colors, font, breakpoints, mixins } }) => css`
     display: grid;
     padding: 1rem;
     grid-template-columns: 1fr;
-    border-radius: ${borderRadius.md};
     transition: background-color 0.2s ease-in;
     font-weight: ${font.weight.bold};
     height: 100%;
@@ -13,6 +12,7 @@ export const BlogPostLink = styled.a(
     grid-template-areas:
       'title'
       'excerpt';
+    ${mixins.rounded}
 
     &:hover,
     &:focus {

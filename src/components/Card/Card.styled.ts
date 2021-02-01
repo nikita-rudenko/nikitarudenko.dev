@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components'
 
 export const Card = styled.div(
-  ({ theme: { borderRadius, colors, boxShadow, breakpoints, font } }) => css`
+  ({ theme: { colors, boxShadow, breakpoints, font, mixins } }) => css`
     background-color: ${colors.bgPrimary};
-    border-radius: ${borderRadius.md};
     box-shadow: ${boxShadow.md};
     font-size: ${font.size.sm};
     font-weight: ${font.weight.bold};
+    ${mixins.rounded}
 
     @media (min-width: ${breakpoints.md}) {
       font-size: ${font.size.xl};

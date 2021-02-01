@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const Tag = styled.div(
-  ({ theme: { borderRadius, colors, font } }) => css`
+  ({ theme: { colors, font, mixins } }) => css`
     display: inline-flex;
     justify-content: center;
     padding: 0 0.25rem;
@@ -10,6 +10,6 @@ export const Tag = styled.div(
     background-color: inherit;
     color: ${colors.fontPrimary};
     border: 2px solid ${colors.border};
-    border-radius: ${borderRadius.md};
+    ${mixins.rounded}
   `
 )

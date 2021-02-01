@@ -23,13 +23,13 @@ export const NavRow = styled.nav<{
 )
 
 export const NavLink = styled.a(
-  ({ theme: { borderRadius, breakpoints, colors } }) => css`
+  ({ theme: { breakpoints, colors, mixins } }) => css`
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
     flex-direction: column;
-    border-radius: ${borderRadius.md};
+    ${mixins.rounded}
 
     &:hover,
     &:focus {

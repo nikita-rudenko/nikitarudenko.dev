@@ -1,10 +1,9 @@
 import styled, { css } from 'styled-components'
 
 export const SnippetLink = styled.a(
-  ({ theme: { borderRadius, colors, font } }) => css`
+  ({ theme: { colors, font, mixins } }) => css`
     display: grid;
     padding: 1rem;
-    border-radius: ${borderRadius.md};
     transition: background-color 0.2s ease-in;
     font-weight: ${font.weight.bold};
     row-gap: 0.2rem;
@@ -12,6 +11,7 @@ export const SnippetLink = styled.a(
       'title'
       'excerpt'
       'tags';
+    ${mixins.rounded}
 
     &:hover,
     &:focus {

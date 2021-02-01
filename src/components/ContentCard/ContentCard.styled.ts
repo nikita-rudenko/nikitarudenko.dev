@@ -3,12 +3,12 @@ import styled, { css } from 'styled-components'
 import List from '@components/List'
 
 export const Wrapper = styled.div(
-  ({ theme: { breakpoints, borderRadius, boxShadow, colors } }) => css`
+  ({ theme: { breakpoints, boxShadow, colors, mixins } }) => css`
     background-color: ${colors.bgPrimary};
-    border-radius: ${borderRadius.md};
     box-shadow: ${boxShadow.md};
     overflow: hidden;
     padding: 1rem;
+    ${mixins.rounded}
 
     ${List} {
       padding: 1rem 0;

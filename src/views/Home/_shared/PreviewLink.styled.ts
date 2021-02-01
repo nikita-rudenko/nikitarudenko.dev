@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components'
 
 export const PreviewLink = styled.a(
-  ({ theme: { borderRadius, colors, font } }) => css`
+  ({ theme: { colors, font, mixins } }) => css`
     padding: 0.4rem 0.75rem;
     font-weight: ${font.weight.bold};
-    border-radius: ${borderRadius.md};
     transition: background-color 0.2s ease-in;
+    ${mixins.rounded}
 
     &:hover,
     &:focus {

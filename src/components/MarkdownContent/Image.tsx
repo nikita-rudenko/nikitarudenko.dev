@@ -1,9 +1,10 @@
 import styled, { css } from 'styled-components'
 
 const Image = styled.img(
-  ({ theme: { borderRadius, breakpoints } }) => css`
+  ({ theme: { breakpoints, mixins } }) => css`
     margin: 1rem auto;
-    border-radius: ${borderRadius.md};
+    ${mixins.rounded}
+
     @media (min-width: ${breakpoints.md}) {
       margin: 2rem auto;
     }

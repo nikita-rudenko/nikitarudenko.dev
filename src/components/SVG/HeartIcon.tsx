@@ -1,6 +1,4 @@
 const HeartIcon = ({ width = '1em', height = '1em' }): JSX.Element => {
-  console.log(width)
-
   return (
     <svg width={width} height={height} viewBox="0 0 47.5 47.5">
       <defs>

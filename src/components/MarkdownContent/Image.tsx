@@ -1,10 +1,14 @@
-type Props = {
-  src: string
-  alt: string
-}
+import styled, { css } from 'styled-components'
 
-const Image = ({ src, alt }: Props) => {
-  return <img className="mx-auto my-4 rounded-md md:my-8" src={src} alt={alt} />
-}
+const Image = styled.img(
+  ({ theme: { breakpoints, mixins } }) => css`
+    margin: 1rem auto;
+    ${mixins.rounded}
+
+    @media (min-width: ${breakpoints.md}) {
+      margin: 2rem auto;
+    }
+  `
+)
 
 export default Image

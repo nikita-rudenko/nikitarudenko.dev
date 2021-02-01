@@ -1,6 +1,6 @@
-const HeartIcon = (props: any) => {
+const HeartIcon = ({ width = '1em', height = '1em' }): JSX.Element => {
   return (
-    <svg width="1em" height="1em" viewBox="0 0 47.5 47.5" {...props}>
+    <svg width={width} height={height} viewBox="0 0 47.5 47.5">
       <defs>
         <clipPath id="prefix__a">
           <path d="M0 38h38V0H0v38z" />

@@ -13,7 +13,7 @@ date: 2019-03-29T21:15:25.000+00:00
 
 I started my coding journey in spring 2018. I earned some programming skills since that time but still, I understand there are many more things to learn ahead. Anyway, I decided to gather these tips in a single place to help future developers on their path. This article is the guide I would have liked to have found when I started my journey.
 
-# **Before Starting**
+# Before Starting
 
 If you decided to study on your own, there is a lot of information on the Internet and it’s hard to wrap your head around everything. It’s important to have a structured plan and avoid wasting time by jumping from one resource to another.
 
@@ -41,7 +41,7 @@ As a starting point, I recommend signing up on [freeCodeCamp](https://www.freeco
 
 The first section encompasses the very basics of how to build static sites and apply styles to them.
 
-## **The Basics**
+## The Basics
 
 Basic HTML and HTML5 and Basic CSS sections are the fundamentals of the modern Internet. Applied Visual Design, Applied Accessibility, and Responsive Web Design Principles will teach you the basics of writing good websites. Don’t rush and step carefully, those are the main building blocks in your knowledge.
 
@@ -102,7 +102,7 @@ Before proceeding to the final projects, you have to be prepared for the final b
 
 After you beat it I can say that…
 
-## **…now you know how to work with JavaScript!** 🎉
+## …now you know how to work with JavaScript! 🎉
 
 ![Code.](https://res.cloudinary.com/nikita-rudenko/image/upload/v1598803994/nikita-rudenko.dev/code.jpg "Photo by Pankaj Patel on Unsplash")
 
@@ -126,7 +126,7 @@ Despite some people saying jQuery is dead, it will be always helpful when the so
 
 I didn’t fully appreciate CSS frameworks until I saw their real power. I wanted to learn advanced CSS techniques and bought an amazing [Advanced CSS and Sass ](https://www.udemy.com/advanced-css-and-sass/?couponCode=LAUNCHSITE4)course (paid) by Jonas Schmedtmann. Highly recommended if you want to polish your CSS skills and understand the workflow. I’m still happy that I found it.
 
-## **React & Redux**
+## React & Redux
 
 This is the main part of the Front End Libraries section. React is a great choice as your first JavaScript library to learn.
 
@@ -138,7 +138,7 @@ My personal favorites:
 2. [React for beginners](https://reactforbeginners.com/) (paid) by Wes Bos
 3. [React - The Complete Guide](https://www.udemy.com/react-the-complete-guide-incl-redux/?couponCode=ACAD_W) (paid) by Academind
 
-## **Now you can build anything you want** 🎉
+## Now you can build anything you want 🎉
 
 ![Choice.](https://res.cloudinary.com/nikita-rudenko/image/upload/v1598804084/nikita-rudenko.dev/choice.jpg "Photo by rawpixel on Unsplash")
 

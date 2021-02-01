@@ -1,14 +1,20 @@
 import { AppProps } from 'next/app'
+import { StyleSheetManager, ThemeProvider } from 'styled-components'
 
-import { ThemeContextProvider } from '@context/ThemeContext'
-import '@styles/tailwind.css'
 import '@styles/fonts.css'
+import GlobalStyles from '@styles/GlobalStyles'
+import theme from '@styles/theme'
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
-    <ThemeContextProvider>
-      <Component {...pageProps} />
-    </ThemeContextProvider>
+    <StyleSheetManager
+      disableVendorPrefixes={process.env.NODE_ENV === 'development'}
+    >
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+        <GlobalStyles />
+      </ThemeProvider>
+    </StyleSheetManager>
   )
 }
 

@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import { NAME } from '@constants/seo'
 import { TBlogPost } from '@typings/contentTypes'
+import formatDate from '@utils/dateFormatter'
 import { getContentData, getPageSlugs } from '@utils/markdownParser'
 import BlogPost from '@views/BlogPost'
 
@@ -36,7 +37,7 @@ export async function getStaticProps({ params }: any) {
     props: {
       blogPost: {
         id,
-        date: date.toJSON(),
+        date: formatDate(date),
         title,
         tags,
         content,

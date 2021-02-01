@@ -6,6 +6,7 @@ import {
   TPRojectPreview,
   TSnippetPreview,
 } from '@typings/contentTypes'
+import formatDate from '@utils/dateFormatter'
 import { getContentDataList } from '@utils/markdownParser'
 import Home from '@views/Home'
 
@@ -36,7 +37,7 @@ async function getBlogPostsPreview() {
       return {
         id,
         href: `/blog/${id}`,
-        date: date.toJSON(),
+        date: formatDate(date),
         title,
         excerpt,
       }

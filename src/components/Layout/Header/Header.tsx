@@ -1,11 +1,9 @@
-import { TSpreadProps } from '@typings/commonPropTypes'
-
 import NavDesktop from './NavDesktop'
 import NavMobile from './NavMobile'
 
-const Header = ({ ...props }: TSpreadProps) => {
+const Header = () => {
   return (
-    <header {...props}>
+    <header>
       <NavMobile />
       <NavDesktop />
     </header>

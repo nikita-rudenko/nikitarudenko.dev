@@ -4,6 +4,7 @@ import List from '@components/List'
 
 export const Wrapper = styled.div(
   ({ theme: { breakpoints, boxShadow, colors, mixins } }) => css`
+    position: relative;
     background-color: ${colors.bgPrimary};
     box-shadow: ${boxShadow.md};
     overflow: hidden;
@@ -32,6 +33,7 @@ export const Title = styled.h1(
     }
   `
 )
+
 export const TitleContent = styled.span(
   ({ theme: { colors } }) => css`
     padding: 0 0.25rem;

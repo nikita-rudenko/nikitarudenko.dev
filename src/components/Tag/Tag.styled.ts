@@ -10,6 +10,7 @@ export const Tag = styled.div(
     background-color: inherit;
     color: ${colors.fontPrimary};
     border: 2px solid ${colors.border};
+    white-space: nowrap;
     ${mixins.rounded}
   `
 )

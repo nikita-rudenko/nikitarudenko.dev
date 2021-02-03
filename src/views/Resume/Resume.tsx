@@ -1,6 +1,8 @@
+import { useRouter } from 'next/router'
+
 import Clickable from '@components/Clickable'
 import Layout from '@components/Layout'
-import { PrinterIcon } from '@components/SVG'
+import { ArrowLeftIcon, HomeIcon, PrinterIcon } from '@components/SVG'
 
 import { ListItem } from './_shared/ListItem.styled'
 import JobCard from './JobCard'
@@ -9,7 +11,13 @@ import { ABOUT_ME, CONTACTS, JOBS, SKILLS } from './resume.constants'
 import * as Styled from './Resume.styled'
 import ResumeSection from './ResumeSection'
 
-const Resume = () => {
+type Props = {
+  isServer: boolean
+}
+
+const Resume = ({ isServer }: Props) => {
+  const router = useRouter()
+
   const print = () => {
     process.browser && window.print()
   }
@@ -24,10 +32,23 @@ const Resume = () => {
         }}
       >
         <Styled.Wrapper>
-          <Clickable as="button" onClick={print}>
-            <PrinterIcon />
-            <span>Print</span>
-          </Clickable>
+          <Styled.ButtonsRow>
+            {isServer ? (
+              <Clickable as="a" href="/">
+                <HomeIcon />
+                <span>Home</span>
+              </Clickable>
+            ) : (
+              <Clickable as="button" onClick={router.back}>
+                <ArrowLeftIcon />
+                <span>Back</span>
+              </Clickable>
+            )}
+            <Clickable as="button" onClick={print}>
+              <PrinterIcon />
+              <span>Print</span>
+            </Clickable>
+          </Styled.ButtonsRow>
 
           <Styled.Paper>
             <Styled.Side>

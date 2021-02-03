@@ -10,11 +10,14 @@ export const Wrapper = styled.div(
     display: grid;
     grid-auto-flow: row;
     row-gap: 2rem;
+  `
+)
 
-    ${Clickable} {
-      justify-self: flex-end;
-      margin: 0 2rem;
-    }
+export const ButtonsRow = styled.div(
+  () => css`
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
   `
 )
 

@@ -4,6 +4,7 @@ import { StyleSheetManager, ThemeProvider } from 'styled-components'
 import '@styles/fonts.css'
 import GlobalStyles from '@styles/GlobalStyles'
 import theme from '@styles/theme'
+import { print as PrintStyles } from '@views/Resume/Resume.styled'
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
@@ -13,6 +14,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
         <GlobalStyles />
+        <PrintStyles />
       </ThemeProvider>
     </StyleSheetManager>
   )

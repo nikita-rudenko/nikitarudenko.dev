@@ -1,3 +1,5 @@
+import { ping } from './animations'
+
 const constants = {
   headerHeight: '6rem',
   containerWidth: '48rem',
@@ -353,15 +355,20 @@ const mixins = {
 
 const colors = {
   bgPrimary: palette.base.white,
-  bgSecondary: palette.coolGray[100],
+  bgSecondary: palette.trueGray[50],
   accent: '#f7f382',
-  border: palette.coolGray[200],
+  border: palette.trueGray[200],
   link: palette.blue[900],
   fontPrimary: palette.blueGray[800],
   fontSecondary: '#999',
 }
 
+const animations = {
+  ping,
+}
+
 export default {
+  animations,
   boxShadow,
   breakpoints,
   colors,

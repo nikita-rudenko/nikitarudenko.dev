@@ -10,6 +10,19 @@ export const Card = styled(ContentCard)(
   `
 )
 
+export const Cta = styled.div(
+  ({ theme: { breakpoints } }) => css`
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+
+    @media (min-width: ${breakpoints.md}) {
+      top: 2rem;
+      right: 2.25rem;
+    }
+  `
+)
+
 export const Grid = styled.div(
   ({ theme: { breakpoints } }) => css`
     display: grid;

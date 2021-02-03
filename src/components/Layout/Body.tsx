@@ -1,16 +1,16 @@
 import styled, { css } from 'styled-components'
 
 type Props = {
-  backgroundType?: 'primary' | 'gradient'
+  backgroundType?: 'primary' | 'secondary' | 'gradient'
 }
 
 const Body = styled.main<Props>(
   ({ backgroundType, theme: { colors, gradients } }) => css`
     flex: 1;
 
-    background: ${backgroundType === 'gradient'
-      ? gradients.orangePeach
-      : colors.bgPrimary};
+    ${backgroundType === 'gradient' && `background: ${gradients.orangePeach};`}
+    ${backgroundType === 'primary' && `background: ${colors.bgPrimary};`}
+    ${backgroundType === 'secondary' && `background: ${colors.bgSecondary};`}
   `
 )
 

@@ -1,12 +1,19 @@
 import styled, { css } from 'styled-components'
 
-export const Grid = styled.div(
+import Tag from '@components/Tag'
+
+export const StackList = styled.div(
   () => css`
     padding: 1rem 0.8rem;
     justify-self: end;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 0.5rem;
-    column-gap: 0.4rem;
+
+    // NOTE: Safari doesn't support flex gap 😒
+    ${Tag} {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      margin-bottom: 0.4rem;
+    }
   `
 )

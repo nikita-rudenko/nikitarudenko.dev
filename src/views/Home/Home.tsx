@@ -1,5 +1,6 @@
 import Layout from '@components/Layout'
-import SocialBlock from '@components/SocialBlock'
+import NavRow from '@components/NavRow'
+import { INTERNAL_LINKS_LIST, SOCIAL_LINKS_LIST } from '@constants/links'
 import {
   TBlogPostPreview,
   TPRojectPreview,
@@ -8,7 +9,6 @@ import {
 
 import BlogCard from './BlogCard'
 import HeroSection from './HeroSection'
-import HomeNavigation from './HomeNavigation'
 import LabsCard from './LabsCard'
 import MainSection from './MainSection'
 import NotepadCard from './NotepadCard'
@@ -24,11 +24,11 @@ const Home = ({ blogPosts, projects, snippets }: Props): JSX.Element => (
     <Layout.Body>
       <HeroSection />
       <MainSection>
-        <HomeNavigation />
+        <NavRow linksList={INTERNAL_LINKS_LIST.slice(1, Infinity)} />
         <BlogCard blogPosts={blogPosts} />
         <LabsCard projects={projects} />
         <NotepadCard snippets={snippets} />
-        <SocialBlock />
+        <NavRow linksList={SOCIAL_LINKS_LIST} />
       </MainSection>
     </Layout.Body>
     <Layout.Footer />

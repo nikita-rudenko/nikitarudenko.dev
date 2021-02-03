@@ -1,1 +1,1 @@
-export { default } from './Tag'
+export { Tag as default } from './Tag.styled'

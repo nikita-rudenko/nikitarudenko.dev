@@ -33,85 +33,85 @@ export default {
   'maybe-class-name': {
     color: '#e06c75',
   },
-  function: {
+  'function': {
     color: '#61afef',
   },
   'function-variable': {
     color: '#61afef',
   },
-  parameter: {
+  'parameter': {
     color: '#e06c75',
   },
   'property-access': {
     color: '#e06c75',
   },
-  namespace: {
+  'namespace': {
     Opacity: '.7',
   },
-  comment: {
+  'comment': {
     color: '#6f705e',
   },
-  operator: {
+  'operator': {
     color: '#a77afe',
   },
-  boolean: {
+  'boolean': {
     color: '#a77afe',
   },
-  number: {
+  'number': {
     color: '#d19a66',
   },
   'attr-name': {
     color: '#d19a66',
   },
-  string: {
+  'string': {
     color: '#98c379',
   },
-  entity: {
+  'entity': {
     color: '#e6d06c',
     cursor: 'help',
   },
-  url: {
+  'url': {
     color: '#e6d06c',
   },
-  selector: {
+  'selector': {
     color: '#a6e22d',
   },
-  inserted: {
+  'inserted': {
     color: '#a6e22d',
   },
-  atrule: {
+  'atrule': {
     color: '#c678dd',
   },
   'attr-value': {
     color: '#c678dd',
   },
-  keyword: {
+  'keyword': {
     color: '#c678dd',
   },
-  important: {
+  'important': {
     color: '#c678dd',
     fontWeight: 'bold',
   },
-  deleted: {
+  'deleted': {
     color: '#c678dd',
   },
-  regex: {
+  'regex': {
     color: '#61afef',
   },
-  statement: {
+  'statement': {
     color: '#61afef',
     fontWeight: 'bold',
   },
-  placeholder: {
+  'placeholder': {
     color: '#e5c07b',
   },
-  variable: {
+  'variable': {
     color: '#e5c07b',
   },
-  punctuation: {
+  'punctuation': {
     color: '#bebec5',
   },
-  tag: {
+  'tag': {
     color: '#e06c75',
   },
   'plain-text': {

@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import seo from '@constants/seo'
 import { TBlogPostPreview } from '@typings/contentTypes'
+import formatDate from '@utils/dateFormatter'
 import { getContentDataList } from '@utils/markdownParser'
 import Blog from '@views/Blog'
 
@@ -29,7 +30,7 @@ async function getBlogPostsPreview() {
       return {
         id,
         href: `/blog/${id}`,
-        date: date.toJSON(),
+        date: formatDate(date),
         title,
         excerpt,
       }

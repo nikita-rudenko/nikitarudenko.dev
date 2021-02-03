@@ -17,4 +17,7 @@ export default {
     content:
       'I am a web developer who loves to build great things with React and Next.js',
   },
+  resume: {
+    title: `Résumé | ${NAME}`,
+  },
 }

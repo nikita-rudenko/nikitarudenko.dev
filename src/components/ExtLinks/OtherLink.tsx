@@ -8,14 +8,7 @@ type Props = {
 }
 
 const OtherLink = ({ href, label }: Props) => {
-  return (
-    <ExtLink
-      className="bg-blue-700"
-      href={href}
-      icon={<ExternalLinkIcon />}
-      label={label}
-    />
-  )
+  return <ExtLink href={href} icon={<ExternalLinkIcon />} label={label} />
 }
 
 export default OtherLink

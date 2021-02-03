@@ -1,4 +1,13 @@
 ---
 label: Resume
 hide_body: true
-fields: []
+fields:
+- name: contacts
+  type: field_group
+  config: {}
+  fields:
+  - name: website
+    type: field_group
+    config: {}
+    label: website
+  label: contacts

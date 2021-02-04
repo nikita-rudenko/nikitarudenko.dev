@@ -1,4 +1,31 @@
 ---
 label: component/job
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: date_from
+  type: text
+  config:
+    required: true
+  label: Date From
+- name: date_to
+  type: text
+  config:
+    required: true
+  label: Date To
+- name: company
+  type: text
+  config:
+    required: true
+  label: Company
+- name: responsibilities
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Responsibilities

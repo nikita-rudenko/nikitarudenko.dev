@@ -52,3 +52,23 @@ export type TAboutPageData = {
   learning: string
   stack: string[]
 }
+
+export type TMap = {
+  key: string
+  value: string
+}
+
+export type TJob = {
+  company: string
+  date_from: string
+  date_to: string
+  responsibilities: string[]
+  title: string
+}
+
+export type TResumePageData = {
+  contacts: TMap[]
+  skills: TMap[]
+  about: string
+  work_summary: TJob[]
+}

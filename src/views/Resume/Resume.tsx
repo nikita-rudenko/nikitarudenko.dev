@@ -1,8 +1,6 @@
-import { useRouter } from 'next/router'
-
 import Clickable from '@components/Clickable'
 import Layout from '@components/Layout'
-import { ArrowLeftIcon, PrinterIcon } from '@components/SVG'
+import { HomeIcon, PrinterIcon } from '@components/SVG'
 import { TResumePageData } from '@typings/contentTypes'
 
 import { ListItem } from './_shared/ListItem.styled'
@@ -16,8 +14,6 @@ type Props = {
 }
 
 const Resume = ({ data }: Props) => {
-  const router = useRouter()
-
   const print = () => {
     process.browser && window.print()
   }
@@ -33,9 +29,9 @@ const Resume = ({ data }: Props) => {
       >
         <Styled.Wrapper>
           <Styled.ButtonsRow>
-            <Clickable as="button" onClick={router.back}>
-              <ArrowLeftIcon />
-              <span>Back</span>
+            <Clickable as="a" href="/">
+              <HomeIcon />
+              <span>Home</span>
             </Clickable>
 
             <Clickable as="button" onClick={print}>

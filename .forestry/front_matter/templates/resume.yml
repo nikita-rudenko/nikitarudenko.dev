@@ -5,8 +5,29 @@ fields:
 - name: contacts
   type: blocks
   template_types:
-  - link
+  - component-map
   config:
     min: 
     max: 
   label: Contacts
+- name: skills
+  type: blocks
+  template_types:
+  - component-map
+  config:
+    min: 
+    max: 
+  label: Skills
+- name: about
+  type: text
+  config:
+    required: true
+  label: About
+- name: work_summary
+  type: blocks
+  template_types:
+  - component-job
+  config:
+    min: 
+    max: 
+  label: Work summary

@@ -31,3 +31,5 @@ fields:
     min: 
     max: 
   label: Work summary
+pages:
+- content/pages/resume.md

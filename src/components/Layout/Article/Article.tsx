@@ -1,4 +1,12 @@
-import React, { ReactNode } from 'react'
+import domtoimage from 'dom-to-image'
+import Head from 'next/head'
+import React, {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react'
 
 import { GithubLink, OtherLink } from '@components/ExtLinks'
 import StickerHeading from '@components/StickerHeading'
@@ -14,9 +22,24 @@ type Props = {
 }
 
 const Article = ({ title, tags, links, children }: Props) => {
+  const ref = useRef(null)
+  const [img, setImg] = useState('')
+
+  const gen = useCallback(async () => {
+    const st = await domtoimage.toPng(ref.current!)
+    setImg(st)
+  }, [setImg])
+
+  useEffect(() => {
+    gen()
+  }, [gen])
+
   return (
     <>
-      <Styled.ArticleHeader>
+      <Head>
+        <meta name="og:image" content={img} />
+      </Head>
+      <Styled.ArticleHeader ref={ref}>
         <Styled.TitleWrapper>
           <StickerHeading>{title}</StickerHeading>
         </Styled.TitleWrapper>

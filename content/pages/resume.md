@@ -39,6 +39,7 @@ work_summary:
   date_to: Jan'21
   responsibilities:
   - rapid development of an MVP
+  - implementation of highly-dynamic features
 - template: component-job
   title: Front-end Developer
   date_from: Oct'19

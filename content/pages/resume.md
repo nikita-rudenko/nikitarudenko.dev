@@ -4,7 +4,7 @@ contacts:
   key: Website
   value: nikitarudenko.dev
 - template: component-map
-  key: email
+  key: Email
   value: n.rud3nko@gmail.com
 - template: component-map
   key: linkedin

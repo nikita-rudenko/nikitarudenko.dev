@@ -11,10 +11,10 @@ contacts:
   value: nikitarudenko.dev/linkedin
 skills:
 - template: component-map
-  key: languages
+  key: Languages
   value: HTML, CSS, JavaScript, TypeScript, JSX
 - template: component-map
-  key: tools
+  key: Tools
   value: React.js, Next.js, Node.js, Git, Docker, CircleCI, CSS-in-JS, Express, CSS
     frameworks
 about: I am a front-end developer with problem-solving skills and experience in creating

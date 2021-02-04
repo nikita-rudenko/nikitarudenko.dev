@@ -1,6 +1,7 @@
 ---
 label: component/map
 hide_body: true
+display_field: key
 fields:
 - name: key
   type: text

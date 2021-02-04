@@ -26,7 +26,7 @@ const Article = ({ title, tags, links, children }: Props) => {
   const [img, setImg] = useState('')
 
   const gen = useCallback(async () => {
-    const st = await domtoimage.toPng(ref.current!)
+    const st = await domtoimage.toJpeg(ref.current!)
     setImg(st)
   }, [setImg])
 

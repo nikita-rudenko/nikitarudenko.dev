@@ -1,4 +1,14 @@
 ---
 label: component/map
 hide_body: true
-fields: []
+fields:
+- name: key
+  type: text
+  config:
+    required: true
+  label: Key
+- name: value
+  type: text
+  config:
+    required: true
+  label: Value

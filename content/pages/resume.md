@@ -20,8 +20,8 @@ skills:
 about: I am a front-end developer with problem-solving skills and experience in creating
   and designing software. I can help you to create a multipage website or blog backed
   with CMS, build a scalable web application, integrate your service with 3rd party
-  APIs, apply best practices for your exisiting website/app to make it faster and
-  more robust.
+  APIs, or apply best practices for your exisiting website or app to make it faster
+  and more robust.
 work_summary:
 - template: component-job
   title: React.js Mentor

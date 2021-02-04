@@ -3,6 +3,10 @@ label: page/resume
 hide_body: true
 fields:
 - name: contacts
-  type: field_group
-  config: {}
-  label: contacts
+  type: blocks
+  template_types:
+  - link
+  config:
+    min: 
+    max: 
+  label: Contacts

@@ -1,6 +1,7 @@
 ---
 label: component/job
 hide_body: true
+display_field: company
 fields:
 - name: title
   type: text

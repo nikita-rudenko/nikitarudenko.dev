@@ -1,4 +1,14 @@
 ---
 label: contacts
 hide_body: true
-fields: []
+fields:
+- name: label
+  type: text
+  config:
+    required: true
+  label: label
+- name: href
+  type: text
+  config:
+    required: false
+  label: href

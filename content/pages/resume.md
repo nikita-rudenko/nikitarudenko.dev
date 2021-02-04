@@ -12,11 +12,11 @@ contacts:
 skills:
 - template: component-map
   key: Languages
-  value: HTML, CSS, JavaScript, TypeScript, JSX
+  value: HTML, CSS, JavaScript, TypeScript, JSX.
 - template: component-map
   key: Tools
   value: React.js, Next.js, Node.js, Git, Docker, CircleCI, CSS-in-JS, Express, CSS
-    frameworks
+    frameworks.
 about: I am a front-end developer with problem-solving skills and experience in creating
   and designing software. I can help you to create a multipage website or blog backed
   with CMS, build a scalable web application, integrate your service with 3rd party
@@ -46,6 +46,7 @@ work_summary:
   company: LightIT
   responsibilities:
   - design and creation of software solutions for clients
+  - technical support
 - template: component-job
   title: Front-end Developer
   company: Portefini
@@ -63,6 +64,6 @@ work_summary:
   date_to: Jul'19
   responsibilities:
   - translation of texts from English to Russian
-  - machine translation correction
+  - AI translation correction
 
 ---

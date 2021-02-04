@@ -28,17 +28,17 @@ work_summary:
   date_from: Nov'20
   date_to: Feb'21
   responsibilities:
+  - interview candidates
   - design and plan internship program
-  - lead a frontend internship program
-  - arrange webinars
+  - lead the learning process (webinars, code reviews)
   company: Patternica
 - template: component-job
   title: Front-end Developer
-  company: AnyforSoft
+  company: ContentDrivers
   date_from: Oct'20
-  date_to: " Jan'21"
+  date_to: Jan'21
   responsibilities:
-  - build an MVP
+  - rapid development of an MVP
 - template: component-job
   title: Front-end Developer
   date_from: Oct'19

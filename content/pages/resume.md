@@ -7,7 +7,7 @@ contacts:
   key: Email
   value: n.rud3nko@gmail.com
 - template: component-map
-  key: linkedin
+  key: LinkedIn
   value: nikitarudenko.dev/linkedin
 skills:
 - template: component-map

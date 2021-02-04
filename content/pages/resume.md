@@ -1,7 +1,7 @@
 ---
 contacts:
 - template: component-map
-  key: website
+  key: Website
   value: nikitarudenko.dev
 - template: component-map
   key: email

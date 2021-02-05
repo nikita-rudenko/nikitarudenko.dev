@@ -35,7 +35,7 @@ work_summary:
 - template: component-job
   title: Front-end Developer
   company: ContentDrivers
-  date_from: Oct'20
+  date_from: Nov'20
   date_to: Jan'21
   responsibilities:
   - rapid development of an MVP
@@ -48,6 +48,14 @@ work_summary:
   responsibilities:
   - design and creation of software solutions for clients
   - technical support
+- template: component-job
+  title: Front-end developer
+  date_from: Aug'20
+  date_to: Nov'20
+  company: Yourfirm
+  responsibilities:
+  - features implementation, support, and code refactoring
+  - work in a Scrum team
 - template: component-job
   title: Front-end Developer
   company: Portefini

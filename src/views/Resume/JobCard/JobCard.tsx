@@ -1,23 +1,22 @@
+import { TJob } from '@typings/contentTypes'
+
 import * as Styled from './JobCard.styled'
 
-type Props = {
-  title: string
-  company: string
-  dates: string
-  responsibilities: string[]
-}
+type Props = TJob
 
-const JobCard = ({ title, company, dates, responsibilities }: Props) => {
+const JobCard = (job: Props) => {
   return (
     <Styled.JobCard>
       <Styled.JobTitle>
-        <span>{title}</span>
-        <span>{dates}</span>
+        <span>{job.title}</span>
+        <span>
+          {job.date_from} - {job.date_to}
+        </span>
       </Styled.JobTitle>
 
       <Styled.List>
-        <span>@{company}</span>
-        {responsibilities.map((r) => (
+        <span>@{job.company}</span>
+        {job.responsibilities.map((r) => (
           <li key={r}>- {r}</li>
         ))}
       </Styled.List>

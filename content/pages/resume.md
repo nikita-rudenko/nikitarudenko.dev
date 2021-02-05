@@ -1,0 +1,70 @@
+---
+contacts:
+- template: component-map
+  key: Website
+  value: nikitarudenko.dev
+- template: component-map
+  key: Email
+  value: n.rud3nko@gmail.com
+- template: component-map
+  key: LinkedIn
+  value: nikitarudenko.dev/linkedin
+skills:
+- template: component-map
+  key: Languages
+  value: HTML, CSS, JavaScript, TypeScript, JSX.
+- template: component-map
+  key: Tools
+  value: React.js, Next.js, Node.js, Git, Docker, CircleCI, CSS-in-JS, Express, CSS
+    frameworks.
+about: I am a front-end developer with problem-solving skills and experience in creating
+  and designing software. I can help you to create a multipage website or blog backed
+  with CMS, build a scalable web application, integrate your service with 3rd party
+  APIs, or apply best practices for your exisiting website or app to make it faster
+  and more robust.
+work_summary:
+- template: component-job
+  title: React.js Mentor
+  date_from: Nov'20
+  date_to: Feb'21
+  responsibilities:
+  - interview candidates
+  - design and plan internship program
+  - lead the learning process (webinars, code reviews)
+  company: Patternica
+- template: component-job
+  title: Front-end Developer
+  company: ContentDrivers
+  date_from: Oct'20
+  date_to: Jan'21
+  responsibilities:
+  - rapid development of an MVP
+  - implementation of highly-dynamic features
+- template: component-job
+  title: Front-end Developer
+  date_from: Oct'19
+  date_to: Oct'20
+  company: LightIT
+  responsibilities:
+  - design and creation of software solutions for clients
+  - technical support
+- template: component-job
+  title: Front-end Developer
+  company: Portefini
+  date_from: Sep'19
+  date_to: Jul'20
+  responsibilities:
+  - support and improvement of marketing-related infrastructure
+  - work in a Scrum team
+  - setup of CI/CD workflow from scratch
+  - development and improvement of the major features
+- template: component-job
+  title: Freelance translator
+  company: Unbabel
+  date_from: Sep'18
+  date_to: Jul'19
+  responsibilities:
+  - translation of texts from English to Russian
+  - AI translation correction
+
+---

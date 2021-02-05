@@ -1,23 +1,19 @@
-import { useRouter } from 'next/router'
-
 import Clickable from '@components/Clickable'
 import Layout from '@components/Layout'
-import { ArrowLeftIcon, HomeIcon, PrinterIcon } from '@components/SVG'
+import { HomeIcon, PrinterIcon } from '@components/SVG'
+import { TResumePageData } from '@typings/contentTypes'
 
 import { ListItem } from './_shared/ListItem.styled'
 import JobCard from './JobCard'
 import Profile from './Profile'
-import { ABOUT_ME, CONTACTS, JOBS, SKILLS } from './resume.constants'
 import * as Styled from './Resume.styled'
 import ResumeSection from './ResumeSection'
 
 type Props = {
-  isServer: boolean
+  data: TResumePageData
 }
 
-const Resume = ({ isServer }: Props) => {
-  const router = useRouter()
-
+const Resume = ({ data }: Props) => {
   const print = () => {
     process.browser && window.print()
   }
@@ -33,17 +29,11 @@ const Resume = ({ isServer }: Props) => {
       >
         <Styled.Wrapper>
           <Styled.ButtonsRow>
-            {isServer ? (
-              <Clickable as="a" href="/">
-                <HomeIcon />
-                <span>Home</span>
-              </Clickable>
-            ) : (
-              <Clickable as="button" onClick={router.back}>
-                <ArrowLeftIcon />
-                <span>Back</span>
-              </Clickable>
-            )}
+            <Clickable as="a" href="/">
+              <HomeIcon />
+              <span>Home</span>
+            </Clickable>
+
             <Clickable as="button" onClick={print}>
               <PrinterIcon />
               <span>Print</span>
@@ -56,10 +46,10 @@ const Resume = ({ isServer }: Props) => {
 
               <ResumeSection title="Contacts">
                 <Styled.List>
-                  {CONTACTS.map(({ name, value }) => {
+                  {data.contacts.map(({ key, value }) => {
                     return (
-                      <ListItem key={name}>
-                        <span>{name}</span>
+                      <ListItem key={key}>
+                        <span>{key}</span>
                         <span>{value}</span>
                       </ListItem>
                     )
@@ -69,10 +59,10 @@ const Resume = ({ isServer }: Props) => {
 
               <ResumeSection title="Professional Skills">
                 <Styled.List>
-                  {SKILLS.map(({ name, value }) => {
+                  {data.skills.map(({ key, value }) => {
                     return (
-                      <ListItem key={name}>
-                        <span>{name}</span>
+                      <ListItem key={key}>
+                        <span>{key}</span>
                         <span>{value}</span>
                       </ListItem>
                     )
@@ -83,12 +73,12 @@ const Resume = ({ isServer }: Props) => {
 
             <Styled.Side>
               <ResumeSection title="About Me">
-                <Styled.Description>{ABOUT_ME}</Styled.Description>
+                <Styled.Description>{data.about}</Styled.Description>
               </ResumeSection>
 
               <ResumeSection title="Work Summary">
                 <Styled.JobsGrid>
-                  {JOBS.map((job, i) => (
+                  {data.work_summary.map((job, i) => (
                     <JobCard key={i} {...job} />
                   ))}
                 </Styled.JobsGrid>

@@ -12,11 +12,20 @@ function parseWithMatter(dir: string, fileName: string) {
   return matter(fileContents)
 }
 
-export function getContentDataList(path: string) {
+type Options = {
+  sort: 'asc' | 'desc' | false
+}
+
+export function getContentDataList(
+  path: string,
+  options: Options = {
+    sort: 'desc',
+  }
+) {
   const dir = `${CONTENT_DIR}${path}`
   const fileNames = fs.readdirSync(dir)
 
-  return fileNames.map((fileName) => {
+  const contentArr = fileNames.map((fileName) => {
     const { data, content } = parseWithMatter(dir, fileName)
 
     return {
@@ -25,6 +34,17 @@ export function getContentDataList(path: string) {
       content,
     }
   })
+
+  // Sort by date
+  if (options.sort) {
+    return contentArr.sort((a, b) => {
+      return options.sort === 'desc'
+        ? b.data.date - a.data.date
+        : a.data.date - b.data.date
+    })
+  }
+
+  return contentArr
 }
 
 export function getPageSlugs(path: string) {

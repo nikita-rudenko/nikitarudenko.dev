@@ -2,11 +2,13 @@ import Markdown from 'markdown-to-jsx'
 
 import Blockquote from './Blockquote'
 import CodeBlock from './CodeBlock'
+import { Details } from './Details'
 import Heading from './Heading'
 import Image from './Image'
 import InlineLink from './InlineLink'
 import { OrderedList, UnorderedList, ListItem } from './Lists'
 import Paragraph from './Paragraph'
+import { Separator } from './Separator'
 
 const options = {
   overrides: {
@@ -24,6 +26,8 @@ const options = {
     h6: { component: Heading, props: { variant: 'h6' } },
     blockquote: { component: Blockquote },
     code: { component: CodeBlock },
+    details: { component: Details },
+    hr: { component: Separator },
   },
 }
 

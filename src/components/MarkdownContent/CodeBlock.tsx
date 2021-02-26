@@ -1,11 +1,15 @@
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 
-import { TRenderProps } from '@typings/commonPropTypes'
-
 import codeTheme from './codeTheme'
+import { InlineCode } from './InlineCode'
 
-const CodeBlock = ({ children, className }: TRenderProps) => {
-  return (
+type Props = {
+  children: string
+  className: string
+}
+
+const CodeBlock = ({ children, className }: Props) => {
+  return className ? (
     <SyntaxHighlighter
       language={className?.replace(/lang-/, '') || 'text'}
       style={codeTheme}
@@ -14,6 +18,8 @@ const CodeBlock = ({ children, className }: TRenderProps) => {
     >
       {children}
     </SyntaxHighlighter>
+  ) : (
+    <InlineCode>{children}</InlineCode>
   )
 }
 

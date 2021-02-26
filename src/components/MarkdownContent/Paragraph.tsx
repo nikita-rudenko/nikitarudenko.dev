@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 const Paragraph = styled.p(
   () => css`
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   `
 )
 

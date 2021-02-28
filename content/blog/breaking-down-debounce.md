@@ -6,6 +6,7 @@ title: 'Breaking down: debounce'
 excerpt: Decomposing and explaining components of the debounce
 hero-image: https://res.cloudinary.com/nikita-rudenko/image/upload/v1614519371/nikita-rudenko.dev/debounce-hero-image.png
 heroImage: https://res.cloudinary.com/nikita-rudenko/image/upload/v1614521389/nikita-rudenko.dev/debounce-hero-image.jpg
+isPublished: true
 
 ---
 Recently I have been asked to write a debounce function on a whiteboard. Even though I have used debounce quite often, this task made me feel confused. I had the necessary components in my mind but trouble putting them together quickly.

@@ -1,11 +1,12 @@
 ---
-date: 2021-02-18T15:13:58Z
+date: 2021-02-18T15:13:58.000+00:00
 tags:
-  - javascript
+- javascript
 title: 'Breaking down: debounce'
 excerpt: Decomposing and explaining components of the debounce
----
+hero-image: https://res.cloudinary.com/nikita-rudenko/image/upload/v1614519371/nikita-rudenko.dev/debounce-hero-image.png
 
+---
 Recently I have been asked to write a debounce function on a whiteboard. Even though I have used debounce quite often, this task made me feel confused. I had the necessary components in my mind but trouble putting them together quickly.
 
 In this blog post, I will decompose my debounce implementation into components and try to explain them one-by-one. It can be useful for everyone who uses Javascript but can't call themselves advanced.

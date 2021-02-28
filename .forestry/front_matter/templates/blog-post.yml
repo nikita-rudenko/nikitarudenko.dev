@@ -37,4 +37,5 @@ fields:
   label: Hero-image
 pages:
 - content/blog/a-practical-guide-to-learning-front-end-development-for-beginners.md
+- content/blog/breaking-down-debounce.md
 - content/blog/mastering-vscode.md

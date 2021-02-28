@@ -30,11 +30,11 @@ fields:
   type: tag_list
   default: []
   label: Tags
-- name: hero_image
-  type: file
+- name: hero-image
+  type: text
   config:
-    maxSize: 64
-  label: Hero image
+    required: false
+  label: Hero-image
 pages:
 - content/blog/a-practical-guide-to-learning-front-end-development-for-beginners.md
 - content/blog/mastering-vscode.md

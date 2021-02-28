@@ -33,8 +33,12 @@ fields:
 - name: heroImage
   type: text
   config:
-    required: false
+    required: true
   label: Hero Image
+- name: isPublished
+  type: boolean
+  label: isPublished
+  default: false
 pages:
 - content/blog/a-practical-guide-to-learning-front-end-development-for-beginners.md
 - content/blog/breaking-down-debounce.md

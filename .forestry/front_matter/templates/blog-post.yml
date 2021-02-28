@@ -30,11 +30,11 @@ fields:
   type: tag_list
   default: []
   label: Tags
-- name: hero-image
+- name: heroImage
   type: text
   config:
     required: false
-  label: Hero-image
+  label: Hero Image
 pages:
 - content/blog/a-practical-guide-to-learning-front-end-development-for-beginners.md
 - content/blog/breaking-down-debounce.md

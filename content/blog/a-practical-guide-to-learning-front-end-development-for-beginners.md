@@ -5,8 +5,10 @@ tags:
 - newbie
 title: A practical guide to learning front end development for beginners
 excerpt: This article is the guide I would have liked to have found when I started
-  my journey.
+  my journey
 date: 2019-03-29T21:15:25.000+00:00
+heroImage: https://res.cloudinary.com/nikita-rudenko/image/upload/v1614522351/nikita-rudenko.dev/practical-guide-hero-image.jpg
+isPublished: true
 
 ---
 [Originally posted on Medium](https://medium.com/free-code-camp/a-practical-guide-to-learning-front-end-development-for-beginners-da6516505e41)

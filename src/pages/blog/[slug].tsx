@@ -1,6 +1,6 @@
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 
-import { NAME } from '@constants/seo'
+import { SITE_ADDRESS, NAME } from '@constants/seo'
 import { TBlogPost } from '@typings/contentTypes'
 import formatDate from '@utils/dateFormatter'
 import { getContentData, getPageSlugs } from '@utils/markdownParser'
@@ -10,17 +10,33 @@ type Props = {
   blogPost: TBlogPost
 }
 
-const BlogPostPage = (props: Props) => {
-  const { blogPost } = props
-
+const BlogPostPage = ({ blogPost }: Props) => {
   return (
     <>
-      <Head>
-        <title>
-          {blogPost.title} | {NAME}
-        </title>
-        <meta key="description" name="description" content={blogPost.excerpt} />
-      </Head>
+      {process.env.NODE_ENV === 'production' && (
+        <NextSeo
+          title={`${blogPost.title} | ${NAME}`}
+          description={blogPost.excerpt}
+          openGraph={{
+            url: `${SITE_ADDRESS}/blog/${blogPost.slug}`,
+            title: blogPost.title,
+            description: blogPost.excerpt,
+            images: [
+              {
+                url: blogPost.heroImage,
+                width: 800,
+                height: 600,
+                alt: blogPost.title,
+              },
+            ],
+          }}
+          twitter={{
+            handle: '@rdnkta',
+            cardType: 'summary_large_image',
+          }}
+        />
+      )}
+
       <BlogPost blogPost={blogPost} />
     </>
   )
@@ -30,7 +46,7 @@ export async function getStaticProps({ params }: any) {
   const {
     content,
     id,
-    data: { date, title, tags },
+    data: { date, title, tags, heroImage, excerpt },
   } = await getContentData('blog', params.slug)
 
   return {
@@ -41,6 +57,9 @@ export async function getStaticProps({ params }: any) {
         title,
         tags,
         content,
+        heroImage,
+        excerpt,
+        slug: params.slug,
       },
     },
   }

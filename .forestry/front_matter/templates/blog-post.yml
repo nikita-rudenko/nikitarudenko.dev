@@ -30,6 +30,16 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: heroImage
+  type: text
+  config:
+    required: true
+  label: Hero Image
+- name: isPublished
+  type: boolean
+  label: isPublished
+  default: false
 pages:
 - content/blog/a-practical-guide-to-learning-front-end-development-for-beginners.md
+- content/blog/breaking-down-debounce.md
 - content/blog/mastering-vscode.md

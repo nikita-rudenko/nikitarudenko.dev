@@ -6,6 +6,8 @@ export type TBlogPost = {
   date: string
   tags: string[]
   content: string
+  slug: string
+  heroImage: string
 }
 
 export type TProject = {

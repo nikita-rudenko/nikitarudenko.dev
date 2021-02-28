@@ -1,3 +1,4 @@
+export const SITE_ADDRESS = 'https://nikitarudenko.dev'
 export const NAME = 'Nikita Rudenko'
 
 export default {

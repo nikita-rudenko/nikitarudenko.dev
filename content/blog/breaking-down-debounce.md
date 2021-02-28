@@ -9,6 +9,8 @@ heroImage: https://res.cloudinary.com/nikita-rudenko/image/upload/v1614521389/ni
 isPublished: true
 
 ---
+[Read on dev.to](https://dev.to/nikitarudenko/breaking-down-debounce-3nld)
+
 Recently I have been asked to write a debounce function on a whiteboard. Even though I have used debounce quite often, this task made me feel confused. I had the necessary components in my mind but trouble putting them together quickly.
 
 In this blog post, I will decompose my debounce implementation into components and try to explain them one-by-one. It can be useful for everyone who uses Javascript but can't call themselves advanced.

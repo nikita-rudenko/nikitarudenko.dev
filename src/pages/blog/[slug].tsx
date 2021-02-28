@@ -46,7 +46,7 @@ export async function getStaticProps({ params }: any) {
   const {
     content,
     id,
-    data: { date, title, tags, heroImage },
+    data: { date, title, tags, heroImage, excerpt },
   } = await getContentData('blog', params.slug)
 
   return {
@@ -58,6 +58,7 @@ export async function getStaticProps({ params }: any) {
         tags,
         content,
         heroImage,
+        excerpt,
         slug: params.slug,
       },
     },

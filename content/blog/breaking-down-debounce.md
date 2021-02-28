@@ -180,10 +180,7 @@ function debounce(func, delayMs) {
 
   function callLater(...args) {
     clearTimeout(timeout);
-
-    timeout = setTimeout(() => {
-      func.apply(this, args);
-    }, timeout);
+    timeout = setTimeout(fn, timeout);
   }
 
   return callLater;

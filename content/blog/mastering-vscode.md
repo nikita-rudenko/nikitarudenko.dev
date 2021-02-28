@@ -1,13 +1,14 @@
 ---
-date: 2020-11-14T15:13:58Z
+date: 2020-11-14T15:13:58.000+00:00
 tags:
 - tooling
 - guide
 title: Mastering VSCode
 excerpt: Sharing my experience with the best code editor
+heroImage: https://res.cloudinary.com/nikita-rudenko/image/upload/v1614522258/nikita-rudenko.dev/mastering-vscode-hero-image.jpg
+isPublished: true
 
 ---
-
 VSCode is the ultimate multi-purpose code editor that can fit in any workflow. It has a lot of hidden features and a huge variety of extensions that can take your work experience to a new level. It’s hard to find and keep track of everything, so in this post I will share my experience. Even though this guide is a bit JavaScript/TypeScript-centric, I believe everyone can pick up something new.
 
 ## Shortcuts

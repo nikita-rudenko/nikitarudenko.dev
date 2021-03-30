@@ -8,7 +8,7 @@ const Footer = () => (
     </div>
 
     <div>
-      <span>MIT License © 2020</span>
+      <span>MIT License © 2021</span>
     </div>
   </Styled.Footer>
 )

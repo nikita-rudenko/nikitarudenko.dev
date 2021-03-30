@@ -12,10 +12,9 @@ stack:
 - Scss
 - styled-components
 - Jest
-bio: I am a **frontend developer** with some skills in a Node.js-driven backend world.
-  I always loved bringing a great experience to users. Fortunately, one day it became
-  my profession. My best friends in this occupation are **React** and **Next.js.**
+- Firebase
+bio: I am a **frontend developer** who loves bringing a great experience to users of the apps I build. My best friends in this occupation are **React** and **Next.js.** I believe my work makes both colleagues and users happy and this feeling insipes me to continue creating.
 avatar: "/uploads/avatar.jpg"
-learning: Currently, I'm excited about the **JAMstack** world. I experiment with combining **Next.js** with different API sources, and building lightweight full-stack apps.
+learning: Currently, I'm digging into the backend direction. I keep using **Firebase** in my frontend with their great SDK, and started learning backend side of how things work with **PostgreSQL** and **GraphQL**.
 
 ---

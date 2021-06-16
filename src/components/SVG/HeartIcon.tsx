@@ -1,4 +1,11 @@
-const HeartIcon = ({ width = '1em', height = '1em' }): JSX.Element => {
+type HeartIconProps = {
+  width?: string
+  height?: string
+}
+const HeartIcon = ({
+  width = '1em',
+  height = '1em',
+}: HeartIconProps): JSX.Element => {
   return (
     <svg width={width} height={height} viewBox="0 0 47.5 47.5">
       <defs>

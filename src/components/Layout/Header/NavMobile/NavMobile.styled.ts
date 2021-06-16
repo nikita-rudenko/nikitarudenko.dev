@@ -1,6 +1,9 @@
 import styled, { css } from 'styled-components'
 
-export const Overlay = styled.div<{ isOpen: boolean }>(
+type OverlayProps = {
+  isOpen: boolean
+}
+export const Overlay = styled.div<OverlayProps>(
   ({ isOpen, theme: { breakpoints, constants } }) => css`
     display: block;
     position: fixed;
@@ -39,7 +42,7 @@ export const Navigation = styled.nav<{ isOpen: boolean }>(
   `
 )
 
-export const NavigationList = styled.div<{}>(
+export const NavigationList = styled.div(
   ({ theme: { font } }) => css`
     display: grid;
     grid-auto-flow: row;

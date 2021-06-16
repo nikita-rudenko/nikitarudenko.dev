@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const Toggle = styled.div<{}>(
+export const Toggle = styled.div(
   ({ theme: { colors, boxShadow, breakpoints, mixins, constants } }) => css`
     display: block;
     position: fixed;

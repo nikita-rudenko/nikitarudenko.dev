@@ -1,6 +1,6 @@
 import Clickable from '@components/Clickable'
 import Layout from '@components/Layout'
-import { HomeIcon, PrinterIcon } from '@components/SVG'
+import { HomeIcon } from '@components/SVG'
 import { TResumePageData } from '@typings/contentTypes'
 
 import { ListItem } from './_shared/ListItem.styled'
@@ -14,10 +14,6 @@ type Props = {
 }
 
 const Resume = ({ data }: Props) => {
-  const print = () => {
-    process.browser && window.print()
-  }
-
   return (
     <Layout>
       <Layout.Body
@@ -32,11 +28,6 @@ const Resume = ({ data }: Props) => {
             <Clickable as="a" href="/">
               <HomeIcon />
               <span>Home</span>
-            </Clickable>
-
-            <Clickable as="button" onClick={print}>
-              <PrinterIcon />
-              <span>Print</span>
             </Clickable>
           </Styled.ButtonsRow>
 

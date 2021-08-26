@@ -16,7 +16,7 @@ export const Wrapper = styled.div(
 export const ButtonsRow = styled.div(
   () => css`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 2rem;
   `
 )

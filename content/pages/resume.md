@@ -24,6 +24,15 @@ about: I am a front-end developer with problem-solving skills and experience in 
   and more robust.
 work_summary:
 - template: component-job
+  title: Frontend Developer
+  date_from: Mar'21
+  date_to: now
+  responsibilities:
+  - development and improvement of the apps' features
+  - improve quality of the codebase and tooling
+  - code reviews
+  company: Session
+- template: component-job
   title: React.js Mentor
   date_from: Nov'20
   date_to: Feb'21
